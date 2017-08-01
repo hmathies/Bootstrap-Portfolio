@@ -2,20 +2,15 @@ p {
 	font-family: 'Bellefair', serif;
 	
 }
+body {
+  background: lightgray;
+}
 
 h2, h3 {
 	 font-family: 'Dosis', sans-serif;
 	 font-size: 25px;
-	 text-shadow: 4px 4px 4px #aaa;
-     
+	 text-shadow: 4px 4px 4px #aaa; 
 }
-
-/*body {
-  font-family: 'Tangerine', serif;
-  font-size: 48px;
-  text-shadow: 4px 4px 4px #aaa;
-}*/
-
 
 .navbar-custom {
     background-color: #4d1652;
