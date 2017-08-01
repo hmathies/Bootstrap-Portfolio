@@ -11,7 +11,7 @@ h2, h3 {
 	 font-size: 25px;
 	 text-shadow: 4px 4px 4px #aaa; 
 }
-
+/*Navigation*/
 .navbar-custom {
     background-color: #4d1652;
     font-family: 'Dosis', sans-serif;
@@ -30,3 +30,26 @@ h2, h3 {
     font-size: 25px;
     
 }
+
+/*Contact page*/
+
+ .span6 {
+    width: 75%;
+ }
+.btn-custom {
+  color: white;
+  background-color: #4d1652;
+}
+
+.background-switch {
+  text-align: center;
+  color: white; 
+  width: 70px; 
+  height: 40px;
+  background-color:#4d1652;
+}
+.background-switch:hover {
+  background-color: white; 
+  color: #4d1652;
+  border-radius: 30px;
+  }
