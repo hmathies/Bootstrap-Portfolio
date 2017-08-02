@@ -8,7 +8,7 @@ body {
 }
 h1 {
    font-family: 'Dosis', sans-serif;
-   font-size: 30px;
+   font-size: 35px;
    text-shadow: 4px 4px 4px #aaa; 
 }
 
@@ -46,7 +46,7 @@ h2, h3 {
 #wrap-text p { 
   line-height: 1.8; 
   font-size: 20px;
-  margin: 2rem;
+  margin: 2px;
 }
 #wrap-text .curve { 
   width: 45%; height: auto;
@@ -62,10 +62,23 @@ h2, h3 {
 
 
 /*Contact page*/
-
  .span6 {
-    width: 75%;
+    width: 100%;
+    font-size: 20px;
+    font-style: italic;
  }
+
+#chat {
+  color: yellow;
+  font-size: 35px;
+  font-family: 'Indie Flower', cursive;
+  padding: 4px;
+}
+.btn-xl {
+    padding: 5px 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
 .btn-custom {
   color: white;
   background-color: #4d1652;
@@ -73,15 +86,16 @@ h2, h3 {
 
 .background-switch {
   text-align: center;
-  color: white; 
-  width: 70px; 
+  color: white;
+  width: 100px; 
   height: 40px;
   background-color:#4d1652;
 }
 .background-switch:hover {
-  background-color: white; 
+  background-color: yellow; 
   color: #4d1652;
   border-radius: 30px;
+  font-family: 'Indie Flower', cursive;
   }
 
 .footer {
