@@ -12,6 +12,7 @@ h2, h3 {
 	 text-shadow: 4px 4px 4px #aaa; 
 }
 /*Navigation*/
+
 .navbar-custom {
     background-color: #4d1652;
     font-family: 'Dosis', sans-serif;
@@ -30,6 +31,12 @@ h2, h3 {
     font-size: 25px;
     
 }
+/*Main Section Area*/
+
+
+
+/*Aside*/
+
 
 /*Contact page*/
 
@@ -53,3 +60,15 @@ h2, h3 {
   color: #4d1652;
   border-radius: 30px;
   }
+
+.footer {
+    background: #FFFFF0;
+    border-top: solid;
+    border-top-width: 5px;
+    border-top-color: #A9A9A9;
+}
+
+.navbar-text {
+  text-align:center;
+  float:none;
+}
