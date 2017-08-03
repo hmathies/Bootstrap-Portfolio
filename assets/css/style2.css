@@ -1,10 +1,5 @@
-p {
-	font-family: 'Bellefair', serif;
-	
-}
 body {
   background: lightgray;
-
 }
 h1 {
    font-family: 'Dosis', sans-serif;
@@ -13,11 +8,16 @@ h1 {
 }
 
 h2, h3 {
-	 font-family: 'Dosis', sans-serif;
-	 font-size: 25px;
-	 text-shadow: 4px 4px 4px #aaa; 
+   font-family: 'Dosis', sans-serif;
+   font-size: 25px;
+   text-shadow: 4px 4px 4px #aaa; 
 }
-/*Navigation*/
+
+p {
+	font-family: 'Bellefair', serif;
+}
+
+/*Navigation for the top- the footer was coded as a bottom navbar*/
 
 .navbar-custom {
     background-color: #4d1652;
@@ -34,22 +34,25 @@ h2, h3 {
 .navbar.navbar-default li a {
     color: white;
     font-weight: thick;
-    font-size: 25px;
-    
+    font-size: 25px;   
 }
 
-#navbar-collapse {
-  /*see about getting the navbar to collaps under the header in smaller viewports*/
+.navbar-text {
+  text-align:center;
+  float:none;
 }
-/*Main Section Area*/
-
-#wrap-text p { 
-  line-height: 1.8; 
-  font-size: 20px;
-  margin: 2px;
+.footer {
+    background: #FFFFF0;
+    border-top: solid;
+    border-top-width: 5px;
+    border-top-color: #A9A9A9;
+    position: relative;
+    clear: both;
 }
-#wrap-text .curve { 
-  width: 45%; height: auto;
+/*About me*/
+.wrap-text .curve { 
+  width: 45%; 
+  height: auto;
   min-width: 150px;
   float: left;
   margin-right:2rem; 
@@ -57,33 +60,26 @@ h2, h3 {
   -webkit-shape-outside:circle();
   shape-outside:circle();
 }
-
-/*Aside*/
-
+.wrap-text .opening-line {
+  margin-top: 4.1875rem;
+  margin-bottom: 1.5rem;
+  color: black;
+  font-weight: bold;
+  font-size: 1.15em;
+}
+.wrap-text p { 
+  line-height: 1.8; 
+  font-size: 20px;
+  margin: 2px;
+}
+/*Connections Section*/
+.connections {
+    margin: 5px;
+    position: relative; 
+    height: 40px;
+}
 
 /*Contact page*/
- .span6 {
-    width: 100%;
-    font-size: 20px;
-    font-style: italic;
- }
-
-#chat {
-  color: yellow;
-  font-size: 35px;
-  font-family: 'Indie Flower', cursive;
-  padding: 4px;
-}
-.btn-xl {
-    padding: 5px 5px;
-    font-size: 20px;
-    border-radius: 10px;
-}
-.btn-custom {
-  color: white;
-  background-color: #4d1652;
-}
-
 .background-switch {
   text-align: center;
   color: white;
@@ -97,15 +93,119 @@ h2, h3 {
   border-radius: 30px;
   font-family: 'Indie Flower', cursive;
   }
+.btn-custom {
+  color: white;
+  background-color: #4d1652;
+}
+.btn-xl {
+    padding: 5px 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#chat {
+  color: yellow;
+  font-size: 35px;
+  font-family: 'Indie Flower', cursive;
+  padding: 4px;
+}
+ .span6 {
+    width: 100%;
+    font-size: 20px;
+    font-style: italic;
+    clear:both;
+ }
 
-.footer {
-    background: #FFFFF0;
-    border-top: solid;
-    border-top-width: 5px;
-    border-top-color: #A9A9A9;
+ /*portfolio page*/
+.portfolio-images {
+    margin: 5px;
+    position: relative; 
+    width: 100%; 
 }
 
-.navbar-text {
-  text-align:center;
-  float:none;
+/*#image-tag {
+  text-align: center;
+  background: teal;
+  
+}*/
+/*
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+/*}*/
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   text-align: center; 
+   width: 100%; 
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 980px) {
+ 
+ form input {
+ width: 100%;
+}
+
+.imageSize {
+  height: 100%;
+  width: 50px;
+}
+#messagebox {
+  width: 100%;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 75%;
+}
+  .span6{
+  width: 100%;
+  height: 75%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .span6{
+  width: 90%;
+  height: 75%;
+  left: 5%;
+  right: 5%;
+}
+
+.profile-pic {
+  width: 50%;
+  height: 50%;
+}
+form input {
+ width: 100%
+}
+#messagebox {
+  width: 100%;
+}
+
+/*The portfolio images are distorted and I can't figure out how to fix this*/
+
+}
+
+@media screen and (max-width: 640px) {
+ 
+  
+.navbar-header {
+    position: static;
+    width: 600px;
+    padding: 0px;
+    margin:0px;
+  }
+.navbar-right {
+    position:static;
+    float: left;
+  }
+  
+.profile-pic {
+  width: 100%;
+  height: 100%;
+}
+/*The portfolio images are distorted and I can't figure out how to fix this*/
 }
