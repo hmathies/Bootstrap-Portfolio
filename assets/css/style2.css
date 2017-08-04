@@ -4,7 +4,7 @@ body {
 h1 {
    font-family: 'Dosis', sans-serif;
    font-size: 35px;
-   text-shadow: 4px 4px 4px #aaa; 
+   color: white;
 }
 
 h2, h3 {
@@ -167,6 +167,18 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
+    ul {
+      width: 25%;
+      li {
+        float: none; 
+        a {
+          padding: 10px 3%;
+          line-height: 20px;
+          border-top: 1px solid #333;
+        }
+      }
+    }
+
   .span6{
   width: 90%;
   height: 75%;
@@ -195,7 +207,19 @@ form input {
 
 @media screen and (max-width: 640px) {
  
-  
+  ul {
+    
+      width: 25%;
+      li {
+        float: none; 
+        a {
+          padding: 10px 3%;
+          line-height: 20px;
+          border-top: 1px solid #333;
+        }
+      }
+    }
+   
 .navbar-header {
     position: static;
     width: 600px;
@@ -215,5 +239,23 @@ form input {
   width: 100%;
   height: 100%;
 }
-/*The portfolio images are distorted and I can't figure out how to fix this*/
+
 }
+
+/*@media (max-width: 599px) {
+    ul {
+      /*background: #222;*/
+      width: 25%;
+      li {
+        float: right; 
+        a {
+          padding: 10px 3%;
+          line-height: 20px;
+          border-top: 1px solid #333;
+        }
+      }
+    }
+  }*/
+ 
+
+/*The portfolio images are distorted and I can't figure out how to fix this*/
