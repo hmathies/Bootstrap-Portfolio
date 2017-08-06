@@ -122,22 +122,18 @@ p {
     width: 100%; 
 }
 
-/*#image-tag {
+.jobs h3{
+  position: absolute;
+  bottom: 20px;
+  width: 100%
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300
+  line-height: 30px;
+  color: #fff;
   text-align: center;
-  background: teal;
-  
-}*/
-/*
-.image { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
-/*}*/
-
-h2 { 
-   position: absolute; 
-   top: 200px; 
-   text-align: center; 
-   width: 100%; 
+  background: #4aaaa5;
+  border-bottom: 0;
 }
 
 /*Media Queries*/
@@ -185,23 +181,23 @@ h2 {
   left: 5%;
   right: 5%;
 }
-/*.portfolio-pic {
-     width: 50%;
-     height: 300px;
-} */
-
+/*had trouble with figuring out the image layout
+*/
 .profile-pic {
   width: 50%;
   height: 50%;
 }
+
+.portfolio-pic {
+     width: 100%;
+     height: 75%;
+} 
 form input {
  width: 100%
 }
 #messagebox {
   width: 100%;
 }
-
-/*The portfolio images are distorted and I can't figure out how to fix this*/
 
 }
 
@@ -242,9 +238,9 @@ form input {
 
 }
 
-/*@media (max-width: 599px) {
+@media (max-width: 599px) {
     ul {
-      /*background: #222;*/
+      background: #222;
       width: 25%;
       li {
         float: right; 
@@ -255,7 +251,7 @@ form input {
         }
       }
     }
-  }*/
+  }
  
 
-/*The portfolio images are distorted and I can't figure out how to fix this*/
+/*The portfolio images are distorted and I didn't fhave time to redownload the images at a larger size
