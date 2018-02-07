@@ -1,4 +1,4 @@
-
+/*
 header {
     color: white;
     background: #ffffff;
@@ -8,7 +8,7 @@ header {
     /*padding: 30px;*/
 }
 /*My name/Logo*/
-h1 {
+/* h1 {
     position: absolute;
     background: #4aaaa5;
     width: 20%;
@@ -19,10 +19,10 @@ h1 {
     margin-left: 5%;
     margin-top: 05px;
     padding: 10px;
-    display: inline;   
-}
+    display: inline;
+} */
 /*Nav buttons*/
-ul {
+/* ul {
     text-decoration: none;
     text-align: right;
     margin-right: 10%;
@@ -34,9 +34,9 @@ list-inline {
     text-decoration: none;
     display: inline-block;
     color: #777777;
-}
+} */
 /*main content*/
-body {
+/* body {
     font-size: 18px;
     line-height: 32px;
 	  color: #777777;
@@ -50,20 +50,20 @@ h2, h3 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #08afa7;
     font-size: 25px;
-}
+} */
 
 
 /*background container*/
-.box {
+/* .box {
     position: relative;
     background: #e8e5e5;
     width: 960px;
     height: 650px;
     left: 150px;
     top: 50px;
-}
+} */
 /*main content*/
-.box-1 {
+/* .box-1 {
     position: relative;
     width: 650px;
     background: #feffff;
@@ -71,16 +71,16 @@ h2, h3 {
     padding: 5px;
     float: left;
     z-index: 1;
-    border-style: solid;
+    border-style: solid; */
 /*when adding the border width and color it changed the layout
-because of the math...not enough space so it bumped social 
+because of the math...not enough space so it bumped social
 media sidebar to bottom. investigate this later*/
     /*border-width: 5px;*/
     /*border-color: #dddddd;*/
-}
+/* } */
 
 /*side bar */
-.box-2 {
+/* .box-2 {
    position: relative;
    background-color: #feffff;
    width: 270px;
@@ -103,11 +103,11 @@ media sidebar to bottom. investigate this later*/
     padding: 5px;
     margin-left: 75px;
     z-index: 1;
-}
-/*I created the class "portfolio-title" but removed it from the html becuase I need to figure out how to place 
-each individual title over the images. when i put the class inside the h4 tag it was laying both under and 
+}  */
+/*I created the class "portfolio-title" but removed it from the html becuase I need to figure out how to place
+each individual title over the images. when i put the class inside the h4 tag it was laying both under and
 over the images and the images started to be pushed down...I only changed two of the h4 tags.. */
- .portfolio-title {
+ /* .portfolio-title {
     position: relative;
     background-color: #08afa7;
     color: white;
@@ -117,12 +117,12 @@ over the images and the images started to be pushed down...I only changed two of
     height: 30px;
     text-align:center;
     z-index: 2;
-}
+} */
 
 /*Form elements*/
-form input{
-    font-style: 16px; 
-    height:20px; 
+/* form input{
+    font-style: 16px;
+    height:20px;
     width:600px
 }
 label{
@@ -131,13 +131,13 @@ label{
 
 .background-switch {
   text-align: center;
-  color: white; 
-  width: 70px; 
+  color: white;
+  width: 70px;
   height: 40px;
   background-color: #08afa7;
 }
 .background-switch:hover {
-  background-color: pink; 
+  background-color: pink;
   color: black;
   border-radius: 30px;
   height: 50px;
@@ -154,4 +154,4 @@ footer {
     color: #777777;
     text-align: center;
     clear: both;
-}
+} */
