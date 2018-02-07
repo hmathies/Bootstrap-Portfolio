@@ -36,32 +36,32 @@
 				<div class="row">
 					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
 						<div>
-							<h3><a class="hvr-grow" href="https://reunited.herokuapp.com/" target="_blank">Reunited</a></h3></div>
+							<h3><a class="hvr-grow app-links" href="https://reunited.herokuapp.com/" target="_blank">Reunited</a></h3></div>
 						<img class="portfolio-images" src="assets/images/reunited1.jpg" alt="man and dog">
 					</div>
 
 					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<h3><a class="hvr-grow" href="https://hmathies.github.io/Solar-Eclipse-Trivia/" target="_blank">Solar Eclipse Trivia</a></h3>
+						<h3><a class="hvr-grow app-links" href="https://hmathies.github.io/Solar-Eclipse-Trivia/" target="_blank">Solar Eclipse Trivia</a></h3>
 						<img class="portfolio-images" src="assets/images/SolarEclipse.jpeg" alt="Boy wearing protective glasses">
 					</div>
 
 					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<h3><a class="hvr-grow" href="https://fast-wildwood-25635.herokuapp.com/" target="_blank">eWalk.io</a></h3>
+						<h3><a class="hvr-grow app-links" href="https://fast-wildwood-25635.herokuapp.com/" target="_blank">eWalk.io</a></h3>
 						<img class="portfolio-images" src="assets/images/eWalk.jpeg" alt="login Page">
 					</div>
 
 					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<h3><a class="hvr-grow" href="https://news-the-mongo-way.herokuapp.com/" target="_blank">Mongo News</a></h3>
+						<h3><a class="hvr-grow app-links" href="https://news-the-mongo-way.herokuapp.com/" target="_blank">Mongo News</a></h3>
 						<img class="portfolio-images" src="assets/images/mongoDB.jpeg" alt="MongoDB Logo">
 					</div>
 
 					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<h3><a class="hvr-grow" href="https://clicky-clickster.herokuapp.com/" target="_blank">The Clickster</a></h3>
+						<h3><a class="hvr-grow app-links" href="https://clicky-clickster.herokuapp.com/" target="_blank">The Clickster</a></h3>
 						<img class="portfolio-images" src="assets/images/clicksterpup.jpeg" alt="Black puppy">
 					</div>
 
 					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<h3><a class="hvr-grow" href="https://hmathies.github.io/Train-Schedule/" target="_blank">Train Time</a></h3>
+						<h3><a class="hvr-grow app-links" href="https://hmathies.github.io/Train-Schedule/" target="_blank">Train Time</a></h3>
 						<img class="portfolio-images" src="assets/images/train.jpg" alt="Train">
 					</div>
 
@@ -89,7 +89,20 @@
 
 		<!-- closing container-fluid tag -->
 	</div>
+	<script>
+		var appLinks = document.getElementsByClassName("app-links");
 
+		var verify = function(event) {
+			event.preventDefault();
+			if (confirm("You are about to leave this site, are you sure?")) {
+				window.location.href = event.target.href;
+			}
+		}
+
+		for (var i = 0; i < appLinks.length; i++) {
+			appLinks[i].addEventListener('click', verify, false);
+		}
+	</script>
 </body>
 
 </html>

@@ -88,6 +88,10 @@ img.connections {
     height: 40px;
 }
 
+.connections{
+  margin-botton: 100px;
+}
+
 /*Contact page*/
 .background-switch {
   text-align: center;
