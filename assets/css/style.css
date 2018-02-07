@@ -1,5 +1,5 @@
 body {
-  background: lightgray;
+  background: linear-gradient(90deg, #fff, #dddfd9 );
 }
 h1 {
    font-family: 'Dosis', sans-serif;
@@ -20,15 +20,17 @@ p {
 /*Navigation for the top- the footer was coded as a bottom navbar*/
 
 .navbar-custom {
-    background-color: #4d1652;
+    background: linear-gradient(90deg,  #4d1652, #b3a1b6);
     font-family: 'Dosis', sans-serif;
     font-size: 25px;
     text-decoration: none;
+
 }
 
+
 .navbar.navbar-default a {
-    color: #efefef;
     font-size: 35px;
+
 }
 
 .navbar.navbar-default li a {
@@ -43,6 +45,9 @@ p {
 }
 .navbar-header {
   margin-left: 5px;
+}
+.navbar-default {
+  border: none;
 }
 .footer {
     background: #FFFFF0;
@@ -62,6 +67,7 @@ p {
   border-radius: 50%;
   -webkit-shape-outside:circle();
   shape-outside:circle();
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
 .wrap-text .opening-line {
   margin-top: 4.1875rem;
@@ -127,7 +133,9 @@ img.portfolio-images {
     height: 250px;
     float: left;
     overflow: auto;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
+
 
 .jobs h3 a {
   color: #fff;
@@ -146,7 +154,10 @@ img.portfolio-images {
   text-align: center;
   text-shadow: none;
   margin-left: 3.5px;
+
 }
+
+
 /*Media Queries*/
 @media only screen and (max-width: 980px) {
 
