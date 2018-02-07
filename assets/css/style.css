@@ -73,7 +73,7 @@ p {
   margin: 2px;
 }
 /*Connections Section*/
-.connections {
+img.connections {
     margin: 5px;
     position: relative;
     height: 40px;
@@ -116,26 +116,34 @@ p {
  }
 
  /*portfolio page*/
-.portfolio-images {
+img.portfolio-images {
     margin: 5px;
     position: relative;
-    width: 100%;
+    width: 250px;
+    opacity: 0.8;
+    height: 250px;
+    float: left;
+    overflow: auto;
 }
 
-.jobs h3{
+.jobs h3 a {
+  color: #fff;
+  text-decoration: none;
   position: absolute;
   bottom: 20px;
-  width: 100%
-  padding: 15px;
+  width: 70%;
+  padding: 5px;
   margin-bottom: 0;
-  font-weight: 300
+  font-weight: 300;
   line-height: 30px;
-  color: #fff;
   text-align: center;
-  background: #4aaaa5;
+  background-color: #4d1652;
   border-bottom: 0;
+  z-index: 999;
+  text-align: center;
+  text-shadow: none;
+  margin-left: 3.5px;
 }
-
 /*Media Queries*/
 @media only screen and (max-width: 980px) {
 
