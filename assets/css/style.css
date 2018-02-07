@@ -203,6 +203,7 @@ form input {
   width: 100%;
 }
 
+
 }
 
 @media screen and (max-width: 640px) {
@@ -254,6 +255,20 @@ form input {
           border-top: 1px solid #333;
         }
       }
+    }
+    img.portfolio-images {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .jobs h3 a {
+      margin-right: 15px;
+      width: 92%;
+
+
+
+
     }
   }
 
