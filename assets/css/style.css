@@ -1,157 +1,253 @@
-/*
-header {
-    color: white;
-    background: #ffffff;
-    height: 50px;
-    border-color: #cccccc;
-    border-width: 5px;
-    /*padding: 30px;*/
+body {
+  background: lightgray;
 }
-/*My name/Logo*/
-/* h1 {
-    position: absolute;
-    background: #4aaaa5;
-    width: 20%;
-    height: 45px;
-    top: auto;
-    font-size: 35px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    margin-left: 5%;
-    margin-top: 05px;
-    padding: 10px;
-    display: inline;
-} */
-/*Nav buttons*/
-/* ul {
-    text-decoration: none;
-    text-align: right;
-    margin-right: 10%;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    word-spacing: 15px;
-}
-
-list-inline {
-    text-decoration: none;
-    display: inline-block;
-    color: #777777;
-} */
-/*main content*/
-/* body {
-    font-size: 18px;
-    line-height: 32px;
-	  color: #777777;
-    border-bottom: thin;
-    border-color: #dddddd;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    background-color: #f0ece8;
+h1 {
+   font-family: 'Dosis', sans-serif;
+   font-size: 35px;
+   color: white;
 }
 
 h2, h3 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    color: #08afa7;
+   font-family: 'Dosis', sans-serif;
+   font-size: 25px;
+   text-shadow: 4px 4px 4px #aaa;
+}
+
+p {
+	font-family: 'Bellefair', serif;
+}
+
+/*Navigation for the top- the footer was coded as a bottom navbar*/
+
+.navbar-custom {
+    background-color: #4d1652;
+    font-family: 'Dosis', sans-serif;
     font-size: 25px;
-} */
-
-
-/*background container*/
-/* .box {
-    position: relative;
-    background: #e8e5e5;
-    width: 960px;
-    height: 650px;
-    left: 150px;
-    top: 50px;
-} */
-/*main content*/
-/* .box-1 {
-    position: relative;
-    width: 650px;
-    background: #feffff;
-    margin: 5px;
-    padding: 5px;
-    float: left;
-    z-index: 1;
-    border-style: solid; */
-/*when adding the border width and color it changed the layout
-because of the math...not enough space so it bumped social
-media sidebar to bottom. investigate this later*/
-    /*border-width: 5px;*/
-    /*border-color: #dddddd;*/
-/* } */
-
-/*side bar */
-/* .box-2 {
-   position: relative;
-   background-color: #feffff;
-   width: 270px;
-   margin: 5px;
-   padding: 5px;
-   float: left;
-   text-align: center;
+    text-decoration: none;
 }
 
-.profile-pic {
-  float: left;
-  padding-right: 10px;
+.navbar.navbar-default a {
+    color: #efefef;
+    font-size: 35px;
 }
 
-.portfolio-pic {
-    position: relative;
-    float: left;
-    height:125px;
-    width: 200px;
-    padding: 5px;
-    margin-left: 75px;
-    z-index: 1;
-}  */
-/*I created the class "portfolio-title" but removed it from the html becuase I need to figure out how to place
-each individual title over the images. when i put the class inside the h4 tag it was laying both under and
-over the images and the images started to be pushed down...I only changed two of the h4 tags.. */
- /* .portfolio-title {
-    position: relative;
-    background-color: #08afa7;
+.navbar.navbar-default li a {
     color: white;
-    font-size: 20px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    width: 100x;
-    height: 30px;
-    text-align:center;
-    z-index: 2;
-} */
-
-/*Form elements*/
-/* form input{
-    font-style: 16px;
-    height:20px;
-    width:600px
-}
-label{
-    display: block;
+    font-weight: thick;
+    font-size: 25px;
 }
 
+.navbar-text {
+  text-align:center;
+  float:none;
+}
+.footer {
+    background: #FFFFF0;
+    border-top: solid;
+    border-top-width: 5px;
+    border-top-color: #A9A9A9;
+    position: relative;
+    clear: both;
+}
+/*About me*/
+.wrap-text .curve {
+  width: 45%;
+  height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem;
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+.wrap-text .opening-line {
+  margin-top: 4.1875rem;
+  margin-bottom: 1.5rem;
+  color: black;
+  font-weight: bold;
+  font-size: 1.15em;
+}
+.wrap-text p {
+  line-height: 1.8;
+  font-size: 20px;
+  margin: 2px;
+}
+/*Connections Section*/
+.connections {
+    margin: 5px;
+    position: relative;
+    height: 40px;
+}
+
+/*Contact page*/
 .background-switch {
   text-align: center;
   color: white;
-  width: 70px;
+  width: 100px;
   height: 40px;
-  background-color: #08afa7;
+  background-color:#4d1652;
 }
 .background-switch:hover {
-  background-color: pink;
-  color: black;
+  background-color: yellow;
+  color: #4d1652;
   border-radius: 30px;
-  height: 50px;
-  width: 80px;
+  font-family: 'Indie Flower', cursive;
+  }
+.btn-custom {
+  color: white;
+  background-color: #4d1652;
+}
+.btn-xl {
+    padding: 5px 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#chat {
+  color: yellow;
+  font-size: 35px;
+  font-family: 'Indie Flower', cursive;
+  padding: 4px;
+}
+ .span6 {
+    width: 100%;
+    font-size: 20px;
+    font-style: italic;
+    clear:both;
+ }
+
+ /*portfolio page*/
+.portfolio-images {
+    margin: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.jobs h3{
+  position: absolute;
+  bottom: 20px;
+  width: 100%
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 980px) {
+
+ form input {
+ width: 100%;
+}
+
+.imageSize {
+  height: 100%;
+  width: 50px;
+}
+#messagebox {
+  width: 100%;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 75%;
+}
+  .span6{
+  width: 100%;
+  height: 75%;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+    ul {
+      width: 25%;
+      li {
+        float: none;
+        a {
+          padding: 10px 3%;
+          line-height: 20px;
+          border-top: 1px solid #333;
+        }
+      }
+    }
+
+  .span6{
+  width: 90%;
+  height: 75%;
+  left: 5%;
+  right: 5%;
+}
+/*had trouble with figuring out the image layout
+*/
+.profile-pic {
+  width: 50%;
+  height: 50%;
+}
+
+form input {
+ width: 100%
+}
+#messagebox {
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+
+  ul {
+
+      width: 25%;
+      li {
+        float: none;
+        a {
+          padding: 10px 3%;
+          line-height: 20px;
+          border-top: 1px solid #333;
+        }
+      }
+    }
+
+.navbar-header {
+    position: static;
+    width: 600px;
+    padding: 0px;
+    margin:0px;
+  }
+.navbar-right {
+    position:static;
+    float: left;
+  }
+.portfolio-pic {
+     width: 640px;
+     height: 640px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+}
+
+}
+
+@media (max-width: 599px) {
+    ul {
+      background: #222;
+      width: 25%;
+      li {
+        float: right;
+        a {
+          padding: 10px 3%;
+          line-height: 20px;
+          border-top: 1px solid #333;
+        }
+      }
+    }
   }
 
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: #666666;
-    color: #777777;
-    text-align: center;
-    clear: both;
-} */
+
+/*The portfolio images are distorted and I didn't fhave time to redownload the images at a larger size
