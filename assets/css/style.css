@@ -56,6 +56,7 @@ p {
     border-top-color: #A9A9A9;
     position: relative;
     clear: both;
+
 }
 /*About me*/
 .wrap-text .curve {
@@ -88,9 +89,6 @@ img.connections {
     height: 40px;
 }
 
-.connections{
-  margin-botton: 100px;
-}
 
 /*Contact page*/
 .background-switch {
@@ -165,14 +163,29 @@ img.portfolio-images {
 /*Media Queries*/
 @media only screen and (max-width: 980px) {
 
+  .jobs h3 a {
+    width: 100%;
+    height: 70px;
+    margin-right: 40px;
+    font-size: 50px;
+    padding: 20px;
+    margin-bottom: 40px;
+
+  }
+  img.portfolio-images {
+      width:100%;
+      height: 100%;
+      margin-left: 0px;
+      float: left;
+  }
  form input {
  width: 100%;
 }
 
-.imageSize {
+/* .imageSize {
   height: 100%;
   width: 50px;
-}
+} */
 #messagebox {
   width: 100%;
 }
@@ -185,7 +198,10 @@ img.portfolio-images {
   width: 100%;
   height: 75%;
 }
-
+.connections-div{
+  padding: 300px;
+  margin-bottom: 100px;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -201,19 +217,26 @@ img.portfolio-images {
       }
     }
   }
-  /* .jobs {
-    max-width: 768px;
-  } */
+
     .jobs h3 a {
-      width: 96%;
+      height: 12%;
+      padding: 3px;
+      /* height: 5%;
       margin-left: 5px;
-      font-size: 30px;
+      font-size: 30px; */
+      margin-bottom: 0px;
+
 
     }
     img.portfolio-images {
         width: 100%;
         height: 100%;
 
+    }
+
+    .connections-div{
+      padding: 200px;
+      margin: auto;
     }
 
 /*had trouble with figuring out the image layout
@@ -279,6 +302,10 @@ form input {
       height: 100%;
 
   }
+  .connections-div{
+    padding: 170px;
+    margin: auto;
+  }
 
 }
 
@@ -304,6 +331,10 @@ form input {
     .jobs h3 a {
       width: 92%;
 
+    }
+    .connections-div{
+      padding: 80px;
+      margin: auto;
     }
 
   .navbar.navbar-default .navbar-custom li a {
