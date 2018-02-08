@@ -1,28 +1,3 @@
-// $(document).ready(function(){
-//
-//
-//     $("form").submit(function(event){
-//       event.preventDefault();
-//
-//       $.ajax({
-//           url: "http://formspree.io/hlmathies@gmail.com",
-//           method: "POST",
-//           data: {
-//               name: $('#js-name').val(),
-//               email: $('#js-email').val(),
-//               message: $('#js-message').val()
-//           },
-//           dataType: "json"
-//         }).error(function(jqXHR, status, error){
-//           alert("Ooops! Something went wrong. Please try again.");
-//         }).success(function(data,status,jqXHR){
-//           alert("Thanks for your message!");
-//           $("form").find("#js-name, #js-email, #js-message").val("");
-//
-//       });
-//     });
-//
-// });
 
 
 $( document ).ready(function() {
@@ -41,9 +16,9 @@ $( document ).ready(function() {
             },
             dataType: "json"
         }).error(function(jqXHR, status, error){
-            alert('Uh oh, something went wrong. Please try again.');
+            alert('Ooops! Something went wrong. Please try again."');
         }).success(function(data, status, jqXHR) {
-            alert('Thank you for your message. Kitty will get back to you soon.');
+            alert('Thank you for your message!');
             $('form').find('#js-name, #js-email, #js-message').val('');
         });
     });
