@@ -9,58 +9,72 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Bellefair|Dosis" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+	<link </head>
 
-<body>
-	<div class="container-fluid">
-		<div class="row">
-			<nav class="navbar navbar-default navbar-custom">
-				<div class="navbar-header">
-					<h1><a href="index.html" style="text-decoration: none; color: white">Heather Mathies</a></h1>
-				</div>
-				<div>
-					<ul class="nav navbar-nav navbar-right">
-						<li class="border"><a href="index.html">About</a></li>
-						<li class="border"><a href="portfolio.html">Portfolio</a></li>
-						<li class="border active"><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<!-- <div contact me> -->
-		<div class="row contact-me">
-			<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
-				<form class="span6">
-					<h1>Are you ready to <span id="chat">chat</span> with me?</h1><br>
-					<input class="span6" type="text" placeholder="Name" required><br><br>
-					<input class="span6" type="email" placeholder="Email Address" required><br><br>
-					<textarea class="span6" rows="8" placeholder="Start chatting here!" required></textarea><br>
-					<button type="submit " class="btn btn-custom background-switch btn-xl ">Chat!</button>
-				</form>
-				<!--/.span6-->
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar navbar-default navbar-custom">
+					<div class="navbar-header">
+						<h1><a href="index.html" style="text-decoration: none; color: white">Heather Mathies</a></h1>
+					</div>
+					<div>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="border"><a href="index.html">About</a></li>
+							<li class="border"><a href="portfolio.html">Portfolio</a></li>
+							<li class="border active"><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
 			</div>
-			<!-- Contact me closing </div> -->
-			<div class="row connections-div">
-				<div class="col-md-2 col-lg-2 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
-					<h3>Connect with Me</h3>
-					<hr>
 
-					<a href="https://github.com/hmathies" target="_blank"><img class="connections" src="assets/images/GitHub_Icon.png" height="40" width="40" alt="GitHub"></a>
-					<a href="https://stackoverflow.com/users/8285589/heather-mathies?tab=profile" target="_blank"><img class="connections" src="assets/images/stackoverflow_icon.png" height="40" width="40" alt="Stackoverflow"></a>
-					<a href="https://www.linkedin.com/in/heather-mathies" target="_blank"><img class="connections" src="assets/images/Linkedin_Icon.png" height="40" width="40" alt="linkedin"></a>
-				</div>
-			</div>
-			<div class="row ">
-				<div class="col-lg-12 ">
-					<div class="navbar navbar-default navbar-fixed-bottom ">
-						<p class="navbar-text ">© 2017 - Site Built By Heather Mathies</p>
+			<!-- action="mailto:hlmathies@gmail.com" method="post" enctype="text/plain" -->
+			<!-- <div contact me> -->
+			<div class="row contact-me">
+				<section class="col-md-6 col-lg-6 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
+					<h1>Are you ready to <span id="chat">chat</span> with me?</h1>
+					<form class="span6 flex column" action="https://formspree.io/hlmathies@gmail.com" method="post">
+						<input class="span6" type="text" name="name" placeholder="Name" required />
+						<input class="span6" type="email" placeholder="Email Address" required name="_replyto" />
+						<input type="hidden" name="_subject" value="Email from my portfolio site" />
+						<input type="text" name="_gotcha" style="display:none" />
+						<textarea class="span6" name="comment" rows="8" placeholder="Start chatting here!" required></textarea>
+						<button type="submit " name="submit" class="btn btn-custom background-switch btn-xl ">Chat!</button>
+					</form>
+					<!--/.span6-->
+				</section>
+
+
+
+
+
+
+				<!-- Contact me closing </div> -->
+				<div class="row connections-div">
+					<div class="col-md-2 col-lg-2 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
+						<h3>Connect with Me</h3>
+						<hr>
+
+						<a href="https://github.com/hmathies" target="_blank"><img class="connections" src="assets/images/GitHub_Icon.png" height="40" width="40" alt="GitHub"></a>
+						<a href="https://stackoverflow.com/users/8285589/heather-mathies?tab=profile" target="_blank"><img class="connections" src="assets/images/stackoverflow_icon.png" height="40" width="40" alt="Stackoverflow"></a>
+						<a href="https://www.linkedin.com/in/heather-mathies" target="_blank"><img class="connections" src="assets/images/Linkedin_Icon.png" height="40" width="40" alt="linkedin"></a>
 					</div>
 				</div>
+				<div class="row ">
+					<div class="col-lg-12 ">
+						<div class="navbar navbar-default navbar-fixed-bottom ">
+							<p class="navbar-text ">© 2017 - Site Built By Heather Mathies</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- closing container-fluid tag -->
 			</div>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+			<!--   Link to the javascript file/jQuery link is at the end of the body -->
+			<script src="assets/js/contact.js"></script>
 
-			<!-- closing container-fluid tag -->
-		</div>
-
-</body>
+	</body>
 
 </html>

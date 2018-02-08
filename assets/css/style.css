@@ -1,10 +1,10 @@
 body {
   background: linear-gradient(90deg, #fff, #dddfd9 );
 }
-h1 {
+.contact-me h1 {
    font-family: 'Dosis', sans-serif;
    font-size: 35px;
-   color: white;
+   color: #999e98;
 }
 
 h2, h3 {
@@ -15,6 +15,17 @@ h2, h3 {
 
 p {
 	font-family: 'Bellefair', serif;
+}
+
+.input{
+  width: 80%;
+  max-width: 700px;
+  margin: 1%;
+  line-height: 2em;
+  padding: 6px;
+  font-size: 1em;
+  border-radius: 3px;
+  border: none;
 }
 
 /*Navigation for the top- the footer was coded as a bottom navbar*/
@@ -99,7 +110,7 @@ img.connections {
   background-color:#4d1652;
 }
 .background-switch:hover {
-  background-color: yellow;
+  background-color: #e6e625;
   color: #4d1652;
   border-radius: 30px;
   font-family: 'Indie Flower', cursive;
@@ -114,15 +125,21 @@ img.connections {
     border-radius: 10px;
 }
 #chat {
-  color: yellow;
+  color: #e6e625;
   font-size: 35px;
   font-family: 'Indie Flower', cursive;
   padding: 4px;
 }
  .span6 {
-    width: 100%;
-    font-size: 20px;
+    width: 90%;
     font-style: italic;
+    max-width: 700px;
+    margin: 1%;
+    line-height: 2em;
+    padding: 6px;
+    font-size: 1em;
+    border-radius: 3px;
+    border: none;
     clear:both;
  }
 
