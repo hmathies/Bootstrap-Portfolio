@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
     $('form').submit(function(event) {
         event.preventDefault();
-        alert("working");
+      
 
         $.ajax({
             url: "https://formspree.io/hlmathies@gmail.com",
