@@ -29,6 +29,7 @@ $( document ).ready(function() {
 
     $('form').submit(function(event) {
         event.preventDefault();
+        alert("working");
 
         $.ajax({
             url: "http://formspree.io/hlmathies@gmail.com",
