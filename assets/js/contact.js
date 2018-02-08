@@ -15,6 +15,7 @@ $( document ).ready(function() {
                },
                success: function(data){
                    $("form").trigger("reset"); //reset form
+                   alert("Thanks for your message! I'll be in touch.");
 
                }
        });
