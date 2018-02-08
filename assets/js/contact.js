@@ -32,7 +32,7 @@ $( document ).ready(function() {
         alert("working");
 
         $.ajax({
-            url: "http://formspree.io/hlmathies@gmail.com",
+            url: "https://formspree.io/hlmathies@gmail.com",
             method: "POST",
             data: {
                 name: $('#js-name').val(),
