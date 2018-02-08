@@ -22,22 +22,3 @@ $( document ).ready(function() {
    });
 
  });
-
-
-        //
-        //    $.ajax({
-        //        url: 'insert.php',
-        //        dataType: 'text',
-        //        type: 'post',
-        //        contentType: 'application/x-www-form-urlencoded',
-        //        data: $(this).serialize(),
-        //        success: function( data, textStatus, jQxhr ){
-        //         $('#alertt').fadeIn(2000);
-        //         $('#alertt').html( data );
-        //         $('#alertt').fadeOut(3000);
-        //        resetForm('userInf');
-        //     },
-        //     error: function( jqXhr, textStatus, errorThrown ){
-        //         console.log( errorThrown );
-        //     }
-        // });
