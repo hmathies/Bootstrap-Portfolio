@@ -33,7 +33,7 @@
 			<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
 				<h3>Portfolio</h3>
 				<!-- <div class="pull-left container">   -->
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
 						<div>
 							<h3><a class="hvr-grow app-links" href="https://reunited.herokuapp.com/">Reunited</a></h3></div>
@@ -47,7 +47,7 @@
 
 					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
 						<h3><a class="hvr-grow app-links" href="https://fast-wildwood-25635.herokuapp.com/">eWalk.io</a></h3>
-						<img class="portfolio-images" src="assets/images/eWalk.jpeg" alt="login Page">
+						<img class="portfolio-images" src="assets/images/eWalk.jpeg" alt="Hotel Hallway">
 					</div>
 
 					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
@@ -65,24 +65,89 @@
 						<img class="portfolio-images" src="assets/images/train.jpg" alt="Train">
 					</div>
 
-				</div>
+				</div> -->
+
+				<ul class="photo-grid">
+					<li>
+						<a href="https://hmathies.github.io/Train-Schedule/"></a>
+						<figure>
+							<img src="assets/images/train.jpg" height="180" width="320" alt="Train">
+							<figcaption>
+								<p>Bootstrap, Firebase, HTML, JQuery, Moment.js</p>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="https://clicky-clickster.herokuapp.com/"></a>
+						<figure>
+							<img src="assets/images/clicksterpup.jpeg" height="180" width="320" alt="Black Puppy">
+							<figcaption>
+								<p>ReactJS and Bootstrap</p>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="https://news-the-mongo-way.herokuapp.com/"></a>
+						<figure>
+							<img src="assets/images/mongoDB.jpeg" height="180" width="320" alt="MongoDB Logo">
+							<figcaption>
+								<p>Bootstrap, Express, Handlebars, MongoDB, NodeJS</p>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="https://fast-wildwood-25635.herokuapp.com/"></a>
+						<figure>
+							<img src="assets/images/eWalk.jpeg" height="180" width="320" alt="Hotel Hallway">
+							<figcaption>
+								<p>ExpressJS, Materialize, MySQL, NodeJS</p>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="https://hmathies.github.io/Solar-Eclipse-Trivia/"></a>
+						<figure>
+							<img src="assets/images/SolarEclipse.jpeg" height="180" width="320" alt="Boy wearing protective glasses">
+							<figcaption>
+								<p>Bootstrap, HTML, jQuery</p>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="https://reunited.herokuapp.com/"></a>
+						<figure>
+							<img src="assets/images/reunited1.jpg" height="180" width="320" alt="man and dog ">
+							<figcaption>
+								<p>MySQL, NodeJS, ReactJS</p>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+				</ul>
+
+				<!-- Below div is for the container -->
 			</div>
-			<div class="row connections-div">
-				<div class="col-md-2 col-lg-2 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
+			<div class="row connections-div ">
+				<div class="col-md-2 col-lg-2 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1 ">
 					<h3>Connect with Me</h3>
 					<hr>
 
-					<a href="https://github.com/hmathies"><img class="connections" src="assets/images/GitHub_Icon.png" height="40" width="40" alt="GitHub"></a>
-					<a href="https://stackoverflow.com/users/8285589/heather-mathies?tab=profile"><img class="connections" src="assets/images/stackoverflow_icon.png" height="40" width="40" alt="Stackoverflow"></a>
-					<a href="https://www.linkedin.com/in/heather-mathies"><img class="connections" src="assets/images/Linkedin_Icon.png" height="40" width="40" alt="linkedin"></a>
+					<a href="https://github.com/hmathies "><img class="connections " src="assets/images/GitHub_Icon.png " height="40 " width="40 " alt="GitHub "></a>
+					<a href="https://stackoverflow.com/users/8285589/heather-mathies?tab=profile "><img class="connections " src="assets/images/stackoverflow_icon.png " height="40 " width="40 " alt="Stackoverflow "></a>
+					<a href="https://www.linkedin.com/in/heather-mathies "><img class="connections " src="assets/images/Linkedin_Icon.png " height="40 " width="40 " alt="linkedin "></a>
 				</div>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="navbar navbar-default navbar-fixed-bottom">
-					<p class="navbar-text">© 2018 - Site Built By Heather Mathies</p>
+		<div class="row ">
+			<div class="col-lg-12 ">
+				<div class="navbar navbar-default navbar-fixed-bottom ">
+					<p class="navbar-text ">© 2018 - Site Built By Heather Mathies</p>
 				</div>
 			</div>
 		</div>
@@ -91,11 +156,11 @@
 		<!-- closing container-fluid tag -->
 
 		<script>
-			var appLinks = document.getElementsByClassName("app-links");
+			var appLinks = document.getElementsByClassName("app-links ");
 
 			var verify = function(event) {
 				event.preventDefault();
-				if (confirm("You are about to leave this site, are you sure?")) {
+				if (confirm("You are about to leave this site, are you sure? ")) {
 					window.location.href = event.target.href;
 				}
 			}
