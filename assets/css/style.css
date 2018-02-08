@@ -302,7 +302,7 @@ img.portfolio-images {
 
 @media only screen and (max-width: 768px) {
   ul {
-    background: #4d1652;
+
     width: 25%;
     li {
       float: right;
@@ -354,7 +354,7 @@ form input {
 
 @media screen and (max-width: 640px) {
 
-  ul {
+   ul {
 
       width: 25%;
       li {
@@ -406,7 +406,7 @@ form input {
 }
 
 @media (max-width: 599px) {
-    ul {
+     .navbar.navbar-default .navbar-custom ul li a{
       background: #4d1652;
       width: 25%;
       li {
@@ -449,6 +449,3 @@ form input {
       margin: 3px;
     }
   }
-
-
-/*The portfolio images are distorted and I didn't fhave time to redownload the images at a larger size
