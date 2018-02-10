@@ -1,3 +1,95 @@
+
+.photo-grid {
+	/* margin: 1em auto; */
+	min-width: 900px;
+	text-align: center;
+
+}
+
+
+.photo-grid li {
+	box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+	display: inline-block;
+	margin: 1em;
+	width: 350px;
+}
+
+.photo-grid h3 img {
+	display: block;
+	height: auto;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+	max-width: 100%;
+}
+
+.photo-grid figure {
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	width: 350px;
+}
+
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}
+
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 350px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+
+.photo-grid li:hover figcaption{
+	opacity: 1;
+}
+.photo-grid li:hover h3 {
+	opacity: 0;
+}
+
+.photo-grid li:hover img {
+	opacity: 1;
+}
+
+.photo-grid li:hover figure img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.photo-grid li:hover figure h3 {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.photo-grid li:hover figcaption p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+/* lines below are from original master file */
 body {
   background: linear-gradient(90deg, #fff, #dddfd9 );
 }
@@ -156,23 +248,22 @@ img.portfolio-images {
 }
 
 
-.jobs h3 a {
+.jobs  {
   color: #fff;
   text-decoration: none;
   position: absolute;
-  bottom: 20px;
-  width: 70%;
-  padding: 5px;
+  bottom: 0px;
+  width: 100%;
+  padding: 0px;
   margin-bottom: 0;
   font-weight: 300;
   line-height: 30px;
-  text-align: center;
+  /* text-align: center; */
   background-color: #4d1652;
   border-bottom: 0;
-  z-index: 999;
-  text-align: center;
+  z-index: 1;
   text-shadow: none;
-  margin-left: 3.5px;
+  margin-left: 0px;
 
 }
 
@@ -223,7 +314,7 @@ img.portfolio-images {
 
 @media only screen and (max-width: 768px) {
   ul {
-    background: #4d1652;
+
     width: 25%;
     li {
       float: right;
@@ -275,7 +366,7 @@ form input {
 
 @media screen and (max-width: 640px) {
 
-  ul {
+   ul {
 
       width: 25%;
       li {
@@ -323,11 +414,20 @@ form input {
     padding: 170px;
     margin: auto;
   }
+  .photo-grid {
+    min-width: 250px;
+    margin: 0;
+    padding: 0;
+  }
+.photo-grid ul{
+    margin: 0;
+    padding: 0;
+  }
 
 }
 
 @media (max-width: 599px) {
-    ul {
+     .navbar.navbar-default .navbar-custom ul li a{
       background: #4d1652;
       width: 25%;
       li {
@@ -338,6 +438,19 @@ form input {
           border-top: 1px solid #333;
         }
       }
+    }
+    /* .photo-grid {
+      min-width: 250px;
+
+      padding: 0;
+    } */
+  .photo-grid ul{
+      margin-bottom: 50px;
+      padding: 0;
+    }
+    div.row #portfolio-div{
+      margin: 0;
+      padding: 0;
     }
     img.portfolio-images {
         width: 100%;
@@ -370,6 +483,3 @@ form input {
       margin: 3px;
     }
   }
-
-
-/*The portfolio images are distorted and I didn't fhave time to redownload the images at a larger size
