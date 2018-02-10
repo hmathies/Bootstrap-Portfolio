@@ -75,7 +75,7 @@
 							<img src="assets/images/train.jpg" height="300" width="350" alt="Train">
 							<h3 class="jobs">Train Time</h3>
 							<figcaption>
-								<p><a class="app-links" href="https://hmathies.github.io/Train-Schedule/">Bootstrap, Firebase, HTML, JQuery, Moment.js</a></p>
+								<p><a href="https://hmathies.github.io/Train-Schedule/">Bootstrap, Firebase, HTML, JQuery, Moment.js</a></p>
 							</figcaption>
 						</figure>
 						</a>
@@ -164,7 +164,7 @@
 		<!-- closing container-fluid tag -->
 
 		<script>
-			var appLinks = document.getElementsByClassName("app-links ");
+			var appLinks = document.getElementsByClassName("app-links");
 
 			var verify = function(event) {
 				event.preventDefault();
@@ -181,13 +181,15 @@
 				var isTouch = false //var to indicate current input type (is touch versus no touch)
 				var isTouchTimer
 				var curRootClass = '' //var indicating current document root class ("can-touch" or "")
+				var appLinkWarning = ''
 
 				function addtouchclass(e) {
 					clearTimeout(isTouchTimer)
 					isTouch = true
 					if (curRootClass != 'can-touch') { //add "can-touch' class if it's not already present
 						curRootClass = 'can-touch'
-						document.documentElement.classList.add(curRootClass)
+						appLinkWarning = 'app-links'
+						document.documentElement.classList.add(curRootClass).add(appLinkWarning)
 					}
 					isTouchTimer = setTimeout(function() {
 						isTouch = false
