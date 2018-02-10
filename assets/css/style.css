@@ -1,18 +1,19 @@
 
 .photo-grid {
 	margin: 1em auto;
-	max-width: 1106px;
+	max-width: 900px;
 	text-align: center;
 }
 
+
 .photo-grid li {
-	border: 5px solid white;
+	box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 	display: inline-block;
 	margin: 1em;
 	width: 289px;
 }
 
-.photo-grid img {
+.photo-grid h3 img {
 	display: block;
 	height: auto;
   -webkit-transition: all 300ms;
@@ -59,17 +60,28 @@
 	vertical-align: middle;
 }
 
-.photo-grid li:hover figcaption {
+.photo-grid li:hover figcaption{
+	opacity: 1;
+}
+.photo-grid li:hover h3 {
+	opacity: 0;
+}
+
+.photo-grid li:hover img {
 	opacity: 1;
 }
 
-
-.photo-grid li:hover img {
+.photo-grid li:hover figure img {
 	-webkit-transform: scale(1.4);
 	-moz-transform: scale(1.4);
 	transform: scale(1.4);
 }
 
+.photo-grid li:hover figure h3 {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
 
 .photo-grid li:hover figcaption p {
 	-moz-transform: translateY(40px);
@@ -235,23 +247,22 @@ img.portfolio-images {
 }
 
 
-.jobs h3 a {
+.jobs  {
   color: #fff;
   text-decoration: none;
   position: absolute;
-  bottom: 20px;
-  width: 70%;
-  padding: 5px;
+  bottom: 0px;
+  width: 100%;
+  padding: 0px;
   margin-bottom: 0;
   font-weight: 300;
   line-height: 30px;
-  text-align: center;
+  /* text-align: center; */
   background-color: #4d1652;
   border-bottom: 0;
-  z-index: 999;
-  text-align: center;
+  z-index: 1;
   text-shadow: none;
-  margin-left: 3.5px;
+  margin-left: 0px;
 
 }
 
