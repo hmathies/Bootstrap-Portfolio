@@ -32,50 +32,15 @@
 		<div class="row" id="portfolio-div">
 			<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
 				<h3>Portfolio</h3>
-				<!-- <div class="pull-left container">   -->
-				<!-- <div class="row">
-					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<div>
-							<h3><a class="hvr-grow app-links" href="https://reunited.herokuapp.com/">Reunited</a></h3></div>
-						<img class="portfolio-images" src="assets/images/reunited1.jpg" alt="man and dog">
-					</div>
-
-					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<h3><a class="hvr-grow app-links" href="https://hmathies.github.io/Solar-Eclipse-Trivia/">Solar Eclipse Trivia</a></h3>
-						<img class="portfolio-images" src="assets/images/SolarEclipse.jpeg" alt="Boy wearing protective glasses">
-					</div>
-
-					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<h3><a class="hvr-grow app-links" href="https://fast-wildwood-25635.herokuapp.com/">eWalk.io</a></h3>
-						<img class="portfolio-images" src="assets/images/eWalk.jpeg" alt="Hotel Hallway">
-					</div>
-
-					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<h3><a class="hvr-grow app-links" href="https://news-the-mongo-way.herokuapp.com/">Mongo News</a></h3>
-						<img class="portfolio-images" src="assets/images/mongoDB.jpeg" alt="MongoDB Logo">
-					</div>
-
-					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<h3><a class="hvr-grow app-links" href="https://clicky-clickster.herokuapp.com/">The Clickster</a></h3>
-						<img class="portfolio-images" src="assets/images/clicksterpup.jpeg" alt="Black puppy">
-					</div>
-
-					<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 jobs">
-						<h3><a class="hvr-grow app-links" href="https://hmathies.github.io/Train-Schedule/">Train Time</a></h3>
-						<img class="portfolio-images" src="assets/images/train.jpg" alt="Train">
-					</div>
-
-				</div> -->
 
 				<ul class="photo-grid">
 
 					<li>
 						<figure>
-
-							<img src="assets/images/train.jpg" height="300" width="350" alt="Train">
-							<h3 class="jobs">Train Time</h3>
+							<img src="assets/images/reunited1.jpg " height="300 " width="350 " alt="man and dog ">
+							<h3 class="jobs ">Reunited</h3>
 							<figcaption>
-								<p><a href="https://hmathies.github.io/Train-Schedule/">Bootstrap, Firebase, HTML, JQuery, Moment.js</a></p>
+								<p><a href="https://reunited.herokuapp.com/ ">MySQL, NodeJS, ReactJS</a></p>
 							</figcaption>
 						</figure>
 						</a>
@@ -105,6 +70,18 @@
 
 					<li>
 						<figure>
+
+							<img src="assets/images/train.jpg" height="300" width="350" alt="Train">
+							<h3 class="jobs">Train Time</h3>
+							<figcaption>
+								<p><a href="https://hmathies.github.io/Train-Schedule/">Bootstrap, Firebase, HTML, JQuery, Moment.js</a></p>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+
+					<li>
+						<figure>
 							<img src="assets/images/eWalk.jpeg" height="300" width="350" alt="Hotel Hallway ">
 							<h3 class="jobs ">eWalk.io</h3>
 							<figcaption>
@@ -125,16 +102,6 @@
 						</a>
 					</li>
 
-					<li>
-						<figure>
-							<img src="assets/images/reunited1.jpg " height="300 " width="350 " alt="man and dog ">
-							<h3 class="jobs ">Reunited</h3>
-							<figcaption>
-								<p><a href="https://reunited.herokuapp.com/ ">MySQL, NodeJS, ReactJS</a></p>
-							</figcaption>
-						</figure>
-						</a>
-					</li>
 				</ul>
 			</div>
 			<!-- Below div is for the container -->
@@ -144,9 +111,9 @@
 					<h3>Connect with Me</h3>
 					<hr>
 
-					<a href="https://github.com/hmathies" target="_blank"><img class="connections" src="assets/images/GitHub_Icon.png" height="40" width="40" alt="GitHub"></a>
-					<a href="https://stackoverflow.com/users/8285589/heather-mathies?tab=profile" target="_blank"><img class="connections" src="assets/images/stackoverflow_icon.png" height="40" width="40" alt="Stackoverflow"></a>
-					<a href="https://www.linkedin.com/in/heather-mathies" target="_blank"><img class="connections" src="assets/images/Linkedin_Icon.png" height="40" width="40" alt="linkedin"></a>
+					<a class='app-links' href="https://github.com/hmathies" target="_blank"><img class="connections" src="assets/images/GitHub_Icon.png" height="40" width="40" alt="GitHub"></a>
+					<a class='app-links' href="https://stackoverflow.com/users/8285589/heather-mathies?tab=profile" target="_blank"><img class="connections" src="assets/images/stackoverflow_icon.png" height="40" width="40" alt="Stackoverflow"></a>
+					<a class='app-links' href="https://www.linkedin.com/in/heather-mathies" target="_blank"><img class="connections" src="assets/images/Linkedin_Icon.png" height="40" width="40" alt="linkedin"></a>
 
 				</div>
 			</div>
@@ -164,36 +131,21 @@
 		<!-- closing container-fluid tag -->
 
 		<script>
-			var appLinks = document.getElementsByClassName("app-links");
-
-			var verify = function(event) {
-				event.preventDefault();
-				if (confirm("You are about to leave this site, are you sure? ")) {
-					window.location.href = event.target.href;
-				}
-			}
-
-			for (var i = 0; i < appLinks.length; i++) {
-				appLinks[i].addEventListener('click', verify, false);
-			};
-
 			(function() {
 				var isTouch = false //var to indicate current input type (is touch versus no touch)
 				var isTouchTimer
 				var curRootClass = '' //var indicating current document root class ("can-touch" or "")
-				var appLinkWarning = ''
 
 				function addtouchclass(e) {
 					clearTimeout(isTouchTimer)
 					isTouch = true
 					if (curRootClass != 'can-touch') { //add "can-touch' class if it's not already present
 						curRootClass = 'can-touch'
-						appLinkWarning = 'app-links'
-						document.documentElement.classList.add(curRootClass).add(appLinkWarning)
+						document.documentElement.classList.add(curRootClass)
 					}
 					isTouchTimer = setTimeout(function() {
 						isTouch = false
-					}, 500) //maintain "istouch" state for 500ms so removetouchclass doesn't get fired immediately following a touch event
+					}, 1000) //maintain "istouch" state for 500ms so removetouchclass doesn't get fired immediately following a touch event
 				}
 
 				function removetouchclass(e) {
@@ -208,6 +160,10 @@
 				document.addEventListener('mouseover', removetouchclass, false) //this event gets called when input type is everything from touch to mouse/ trackpad
 			})();
 		</script>
+		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="assets/js/verify.js"></script>
 </body>
 
 </html>
