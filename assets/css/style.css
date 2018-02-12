@@ -157,29 +157,24 @@ img.connections {
 /*=============================================================================================================================================
 																																					PORTFOLIO PAGE
 ==============================================================================================================================================*/
- .photo-grid {
-	margin: 1em auto;
- 	max-width: 1106px;
- 	text-align: center;
-	background-color: purple;
-
-
- }
- #portfolio-div{
-	 background-color: green;
-
- }
 
 
  .photo-grid li {
-
- 	box-shadow: 0 3px 6px #999, 0 3px 6px #999;
- 	display: inline-block;
- 	margin: 1em;
- 	width: 100%;
-	float: left;
-
+	 display: inline-block;
+	 margin: 1em;
+	 width: 45%;
+	 float: left;
+	 overflow: hidden;
  }
+
+ .photo-grid {
+		 margin-right: 1em;
+		 padding: 0;
+		 width: 100%;
+		 float: left;
+		 text-align: center;
+	}
+
 
  .photo-grid h3 img {
  	display: block;
@@ -324,7 +319,20 @@ img.connections {
 			height: 75%;
 	}
 	/*======PORTFOLIO MEDIA QUERIES========*/
+	.photo-grid li {
+		display: inline-block;
+		margin: 1em;
+		width: 45%;
+		float: left;
+		overflow: hidden;
+	}
 
+	.photo-grid {
+			margin-right: 1em;
+			padding: 0;
+			width: 100%;
+			float: left;
+	 }
 	  .jobs h3 a {
 		    width: 100%;
 		    height: 70px;
@@ -380,7 +388,20 @@ img.connections {
 		}
 
 		/*======PORTFOLIO MEDIA QUERIES========*/
+		.photo-grid li {
+			display: inline-block;
+			margin: 1em;
+			width: 45%;
+			float: left;
+			overflow: hidden;
+		}
 
+		.photo-grid {
+		    margin-right: 1em;
+		    padding: 0;
+				width: 100%;
+				float: left;
+		 }
 
 
 /*======CONTACT ME MEDIA QUERIES========*/
@@ -396,7 +417,6 @@ img.connections {
 		padding: 0;
 		margin: 0;
 		text-align: center;
-		background-color: black;
 		clear: both;
 
 	}
@@ -437,14 +457,13 @@ img.connections {
 			}
 
 	/*======PORTFOLIO MEDIA QUERIES========*/
-.photo-grid li {
-	display: inline-block;
-	margin: 1em;
-	width: 45%;
-	float: left;
-
-	overflow: hidden;
-}
+		.photo-grid li {
+			display: inline-block;
+			margin: 1em;
+			width: 45%;
+			float: left;
+			overflow: hidden;
+		}
 
 		.photo-grid {
 		    margin-right: 1em;
@@ -514,20 +533,20 @@ img.connections {
 
 
 /*======PORTFOLIO MEDIA QUERIES========*/
-.photo-grid li {
-	display: inline-block;
-	margin: 1em;
-	width: 100%;
-	float: left;
+	.photo-grid li {
+		display: inline-block;
+		margin: 1em;
+		width: 100%;
+		float: left;
 
-}
+	}
 
-		  .photo-grid ul{
+	  .photo-grid ul{
 
-		      padding: 0;
-					margin: 0;
+	      padding: 0;
+				margin: 0;
 
-		    }
+	    }
 		  div.row #portfolio-div{
 		      margin: 0;
 		      padding: 0;
