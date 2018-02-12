@@ -20,32 +20,38 @@ p {
 																																		NAVBAR
 ===============================================================================================================================================*/
 
-.navbar-custom {
+
+
+.navbar-default {
     background: linear-gradient(90deg,  #4d1652, #b3a1b6);
     font-family: 'Dosis', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     text-decoration: none;
 
 }
 
 .navbar.navbar-default a {
-    font-size: 35px;
+    font-size: 16px;
 
 }
 .navbar.navbar-default li a {
     color: white;
-    font-weight: thick;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 16px;
 }
 .navbar-text {
   text-align:center;
   float:none;
+	color: #fff;
 }
 .navbar-header {
   margin-left: 5px;
 }
 .navbar-default {
   border: none;
+}
+.navbar-default .navbar-brand {
+	color: white;
 }
 
 /*===========================================================================================================================================
@@ -56,15 +62,15 @@ p {
   height: auto;
   min-width: 150px;
   float: left;
-  margin-right:2rem;
+  margin-right:2em;
   border-radius: 50%;
   -webkit-shape-outside:circle();
   shape-outside:circle();
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
 }
 .wrap-text .opening-line {
-  margin-top: 4.1875rem;
-  margin-bottom: 1.5rem;
+  margin-top: 4.1875em;
+  margin-bottom: 1.5em;
   color: black;
   font-weight: bold;
   font-size: 1.15em;
@@ -74,13 +80,19 @@ p {
   font-size: 20px;
   margin: 2px;
 }
+
 /*==================================CONNECTIONS CODE==========================*/
 img.connections {
     margin: 5px;
     position: relative;
     height: 40px;
 }
+.connections-div{
+		width: 100%;
+		padding: 0;
+		text-align: center;
 
+	}
 
 /*=================================================================================================================================================
 																																						CONTACT PAGE
@@ -146,18 +158,27 @@ img.connections {
 																																					PORTFOLIO PAGE
 ==============================================================================================================================================*/
  .photo-grid {
- 	/* margin: 1em auto; */
- 	min-width: 900px;
+	margin: 1em auto;
+ 	max-width: 1106px;
  	text-align: center;
+	background-color: purple;
+
+
+ }
+ #portfolio-div{
+	 background-color: green;
 
  }
 
 
  .photo-grid li {
+
  	box-shadow: 0 3px 6px #999, 0 3px 6px #999;
  	display: inline-block;
  	margin: 1em;
- 	width: 350px;
+ 	width: 100%;
+	float: left;
+
  }
 
  .photo-grid h3 img {
@@ -177,6 +198,7 @@ img.connections {
  }
 
  .photo-grid figcaption {
+
  	background: rgba(0,0,0,0.8);
  	height: 100%;
  	left: 0;
@@ -230,6 +252,26 @@ img.connections {
  	vertical-align: middle;
  }
 
+
+ .jobs  {
+   color: #fff;
+   text-decoration: none;
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+   padding: 3px;
+   margin-bottom: 0;
+   font-weight: 300;
+   line-height: 30px;
+   background-color: #4d1652;
+   border-bottom: 0;
+   z-index: 1;
+   text-shadow: none;
+   margin-left: 0px;
+
+ }
+ /*===hover events===*/
+
  .photo-grid li:hover figcaption{
  	opacity: 1;
  }
@@ -259,52 +301,13 @@ img.connections {
  	transform: translateY(40px);
  }
 
- #portfolio-div h2 {
- 	font-family: 'Dosis', sans-serif;
- 	font-size: 25px;
- 	text-shadow: 4px 4px 4px #aaa;
- }
-img.portfolio-images {
-    margin-left: 5px;
-    position: relative;
-    width: 250px;
-    opacity: 0.8;
-    height: 250px;
-    float: left;
-    overflow: auto;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-}
-
-
-.jobs  {
-  color: #fff;
-  text-decoration: none;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  padding: 0px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  background-color: #4d1652;
-  border-bottom: 0;
-  z-index: 1;
-  text-shadow: none;
-  margin-left: 0px;
-
-}
 /*==============================================================================================================================================
 																																		FOOTER
 ===============================================================================================================================================*/
-
-.footer {
-    background: #FFFFF0;
-    border-top: solid;
-    border-top-width: 5px;
-    border-top-color: #A9A9A9;
-    position: relative;
-    clear: both;
+.navbar .navbar-text{
+	color: white;
 }
+
 /*===================================================================================================================================================
 																																			MEDIA QUERIES
 ====================================================================================================================================================*/
@@ -321,12 +324,6 @@ img.portfolio-images {
 			height: 75%;
 	}
 	/*======PORTFOLIO MEDIA QUERIES========*/
-  img.portfolio-images {
-      width:100%;
-      height: 100%;
-      margin-left: 0px;
-      float: left;
-  }
 
 	  .jobs h3 a {
 		    width: 100%;
@@ -351,11 +348,12 @@ img.portfolio-images {
 	}
 	/*======CONNECTIONS DIV MEDIA QUERIES========*/
 	.connections-div{
-		  padding: 300px;
-		  margin-bottom: 100px;
-			float: right;
-			display: inline;
-	}
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+
+		}
 }
 
 @media all and (max-width: 991px) {
@@ -375,28 +373,14 @@ img.portfolio-images {
     }
   }
 		/*======ABOUT ME MEDIA QUERIES========*/
-		#about-me{
-			padding-top: 0.5em;
-			/* background-color: blue; */
-		}
-		.profile-pic {
-				width: 50%;
-				height: 50%;
+
+		#me {
+			margin: 1em;
+			background-color: blue;
 		}
 
 		/*======PORTFOLIO MEDIA QUERIES========*/
-    .jobs h3 a {
-      height: 12%;
-      padding: 3px;
-      /* height: 5%;
-      margin-left: 5px;
-      font-size: 30px; */
-      margin-bottom: 0px;
-    }
-    img.portfolio-images {
-        width: 100%;
-        height: 100%;
-    }
+
 
 
 /*======CONTACT ME MEDIA QUERIES========*/
@@ -408,9 +392,14 @@ img.portfolio-images {
 		}
 /*======CONNECTIONS DIV MEDIA QUERIES========*/
 .connections-div{
-		padding: 200px;
-		margin: auto;
-}
+		/* width: 100%; */
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		background-color: black;
+		clear: both;
+
+	}
 }
 
 @media all and (max-width: 768px) {
@@ -442,43 +431,41 @@ img.portfolio-images {
 	    }
 	/*======ABOUT ME MEDIA QUERIES========*/
 
-		#about-me{
+		.about-me{
 				padding-top: 0.5em;
 				/* background-color: green; */
 			}
 
 	/*======PORTFOLIO MEDIA QUERIES========*/
-	  .jobs h3 a {
-	    width: 96%;
-	    margin-left: 5px;
-	    font-size: 30px;
+.photo-grid li {
+	display: inline-block;
+	margin: 1em;
+	width: 45%;
+	float: left;
 
-	  }
-	  img.portfolio-images {
-	      width: 100%;
-	      height: 100%;
-	  }
-	   .photo-grid {
-	    min-width: 250px;
-	    margin: 0;
-	    padding: 0;
-	  }
+	overflow: hidden;
+}
+
 		.photo-grid {
 		    margin-right: 1em;
 		    padding: 0;
-				width: 90%;
+				width: 100%;
 				float: left;
 		 }
 	/*======CONNECTIONS DIV MEDIA QUERIES========*/
 
-		 .connections-div{
-			 padding: 170px;
-			 margin: auto;
-		 }
+	.connections-div{
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+
+		}
+
 
 }
 
-
+/*====================================== DONT TOUCH BELOW MEDIA QUERY======================================================================*/
 @media all and (max-width: 440px) {
 
 	/*======NAVBAR MEDIA QUERIES========*/
@@ -502,50 +489,63 @@ img.portfolio-images {
 		  .navbar-header {
 		      position: static;
 		      width: 100%;
-		      /* padding: 5px;
-		      margin:5px; */
 		    }
 		  .navbar-right {
 		      position:static;
 		      float: left;
 		      margin: 3px;
 		    }
-/*======ABOUT ME MEDIA QUERIES========*/
 
-			#about-me{
-					width: 100%;
-					padding-top: 0.5em;
-					float: left;
-					/* background-color: purple; */
-				}
+/*======ABOUT ME MEDIA QUERIES========*/
+			#portfolio-image{
+				width: 90%;
+				margin: 1em;
+			}
+			.wrap-text #opening-line {
+			  font-weight: bold;
+			  font-size: 1.15em;
+
+			}
+			.wrap-text p {
+			  line-height: 1.8;
+			  font-size: 20px;
+			  margin: 2em;
+			}
+
 
 /*======PORTFOLIO MEDIA QUERIES========*/
+.photo-grid li {
+	display: inline-block;
+	margin: 1em;
+	width: 100%;
+	float: left;
 
-			#portfolio-image {
-					width: 100%;
-				}
+}
+
 		  .photo-grid ul{
-		      /* margin-bottom: 50px; */
+
 		      padding: 0;
+					margin: 0;
+
 		    }
 		  div.row #portfolio-div{
 		      margin: 0;
 		      padding: 0;
 		    }
-		  img.portfolio-images {
-		        width: 100%;
-		        height: 100%;
-		    }
-		  .jobs h3 a {
-		      width: 92%;
-		    }
+
 
 /*======CONNECTIONS DIV MEDIA QUERIES========*/
 
 		  .connections-div{
-		      padding: 0px;
-		      margin: 0;
-					margin: auto;
+					width: 100%;
+					padding: 0;
+					margin: 0;
+					text-align: center;
+
 		    }
+				.navbar {
+					margin: 0;
+					padding: 0;
+				}
 
   }
