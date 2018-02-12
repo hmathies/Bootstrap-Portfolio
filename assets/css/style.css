@@ -1,131 +1,9 @@
 
-.photo-grid {
-	/* margin: 1em auto; */
-	min-width: 900px;
-	text-align: center;
-
-}
-
-
-.photo-grid li {
-	box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-	display: inline-block;
-	margin: 1em;
-	width: 350px;
-}
-
-.photo-grid h3 img {
-	display: block;
-	height: auto;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  transition: all 300ms;
-	max-width: 100%;
-}
-
-.photo-grid figure {
-	height: 300px;
-	overflow: hidden;
-	position: relative;
-	width: 350px;
-}
-
-.photo-grid figcaption {
-	background: rgba(0,0,0,0.8);
-	height: 100%;
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 100%;
-	-webkit-transition: all 300ms;
-	-moz-transition: all 300ms;
-	transition: all 300ms;
-	-webkit-transition-delay: 100ms;
-	-moz-transition-delay: 100ms;
-	transition-delay: 100ms;
-	z-index: 100;
-}
-
-.photo-grid figcaption  p {
-
-	font-size: 1em;
-	text-shadow: 4em;
-	position: relative;
-	top: 110px;
-	width: 50%;
-	padding: 0.5em;
-	text-align: center;
-	margin: auto;
-	border-style: solid;
-	border-color: #b3a1b6;
-	border-width: 0.2em;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-	vertical-align: middle;
-}
-
-.photo-grid figcaption span {
-
-	font-size: 1.6em;
-	text-shadow: 4em;
-	font-style: bold;
-	position: relative;
-	color: purple;
-	top: 2em;
-	width: 50%;
-	text-align: center;
-	margin: auto;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-	vertical-align: middle;
-}
-
-.photo-grid li:hover figcaption{
-	opacity: 1;
-}
-.photo-grid li:hover h3 {
-	opacity: 0;
-}
-
-.photo-grid li:hover img {
-	opacity: 1;
-}
-
-.photo-grid li:hover figure img {
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	transform: scale(1.4);
-}
-
-.photo-grid li:hover figure h3 {
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	transform: scale(1.4);
-}
-
-.photo-grid li:hover figcaption p {
-	-moz-transform: translateY(40px);
-	-webkit-transform: translateY(40px);
-	transform: translateY(40px);
-}
-/* lines below are from original master file */
+/* Basic HTML styles */
 body {
   background: linear-gradient(90deg, #fff, #dddfd9 );
 }
-.contact-me h1 {
-   font-family: 'Dosis', sans-serif;
-   font-size: 35px;
-   color: #999e98;
-}
-#portfolio-div h2 {
-	font-family: 'Dosis', sans-serif;
-	font-size: 25px;
-	text-shadow: 4px 4px 4px #aaa;
-}
+
 h2, h3 {
    font-family: 'Dosis', sans-serif;
    font-size: 25px;
@@ -136,18 +14,11 @@ p {
 	font-family: 'Bellefair', serif;
 }
 
-.input{
-  width: 80%;
-  max-width: 700px;
-  margin: 1%;
-  line-height: 2em;
-  padding: 6px;
-  font-size: 1em;
-  border-radius: 3px;
-  border: none;
-}
 
-/*Navigation for the top- the footer was coded as a bottom navbar*/
+
+/*==============================================================================================================================================
+																																		NAVBAR
+===============================================================================================================================================*/
 
 .navbar-custom {
     background: linear-gradient(90deg,  #4d1652, #b3a1b6);
@@ -157,18 +28,15 @@ p {
 
 }
 
-
 .navbar.navbar-default a {
     font-size: 35px;
 
 }
-
 .navbar.navbar-default li a {
     color: white;
     font-weight: thick;
     font-size: 25px;
 }
-
 .navbar-text {
   text-align:center;
   float:none;
@@ -179,16 +47,10 @@ p {
 .navbar-default {
   border: none;
 }
-.footer {
-    background: #FFFFF0;
-    border-top: solid;
-    border-top-width: 5px;
-    border-top-color: #A9A9A9;
-    position: relative;
-    clear: both;
 
-}
-/*About me*/
+/*===========================================================================================================================================
+																																			ABOUT ME
+=============================================================================================================================================*/
 .wrap-text .curve {
   width: 45%;
   height: auto;
@@ -212,7 +74,7 @@ p {
   font-size: 20px;
   margin: 2px;
 }
-/*Connections Section*/
+/*==================================CONNECTIONS CODE==========================*/
 img.connections {
     margin: 5px;
     position: relative;
@@ -220,7 +82,9 @@ img.connections {
 }
 
 
-/*Contact page*/
+/*=================================================================================================================================================
+																																						CONTACT PAGE
+==================================================================================================================================================*/
 .background-switch {
   text-align: center;
   color: white;
@@ -243,11 +107,26 @@ img.connections {
     font-size: 20px;
     border-radius: 10px;
 }
+.contact-me h1 {
+   font-family: 'Dosis', sans-serif;
+   font-size: 35px;
+   color: #999e98;
+}
 #chat {
   color: #e6e625;
   font-size: 35px;
   font-family: 'Indie Flower', cursive;
   padding: 4px;
+}
+.input{
+  width: 80%;
+  max-width: 700px;
+  margin: 1%;
+  line-height: 2em;
+  padding: 6px;
+  font-size: 1em;
+  border-radius: 3px;
+  border: none;
 }
  .span6 {
     width: 90%;
@@ -262,7 +141,129 @@ img.connections {
     clear:both;
  }
 
- /*portfolio page*/
+
+/*=============================================================================================================================================
+																																					PORTFOLIO PAGE
+==============================================================================================================================================*/
+ .photo-grid {
+ 	/* margin: 1em auto; */
+ 	min-width: 900px;
+ 	text-align: center;
+
+ }
+
+
+ .photo-grid li {
+ 	box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+ 	display: inline-block;
+ 	margin: 1em;
+ 	width: 350px;
+ }
+
+ .photo-grid h3 img {
+ 	display: block;
+ 	height: auto;
+   -webkit-transition: all 300ms;
+   -moz-transition: all 300ms;
+   transition: all 300ms;
+ 	max-width: 100%;
+ }
+
+ .photo-grid figure {
+ 	height: 300px;
+ 	overflow: hidden;
+ 	position: relative;
+ 	width: 350px;
+ }
+
+ .photo-grid figcaption {
+ 	background: rgba(0,0,0,0.8);
+ 	height: 100%;
+ 	left: 0;
+ 	opacity: 0;
+ 	position: absolute;
+ 	right: 0;
+ 	top: 0;
+ 	width: 100%;
+ 	-webkit-transition: all 300ms;
+ 	-moz-transition: all 300ms;
+ 	transition: all 300ms;
+ 	-webkit-transition-delay: 100ms;
+ 	-moz-transition-delay: 100ms;
+ 	transition-delay: 100ms;
+ 	z-index: 100;
+ }
+
+ .photo-grid figcaption  p {
+
+ 	font-size: 1em;
+ 	text-shadow: 4em;
+ 	position: relative;
+ 	top: 110px;
+ 	width: 50%;
+ 	padding: 0.5em;
+ 	text-align: center;
+ 	margin: auto;
+ 	border-style: solid;
+ 	border-color: #b3a1b6;
+ 	border-width: 0.2em;
+   -webkit-transition: all 300ms ease-out;
+   -moz-transition: all 300ms ease-out;
+   transition: all 300ms ease-out;
+ 	vertical-align: middle;
+ }
+
+ .photo-grid figcaption span {
+
+ 	font-size: 1.6em;
+ 	text-shadow: 4em;
+ 	font-style: bold;
+ 	position: relative;
+ 	color: purple;
+ 	top: 2em;
+ 	width: 50%;
+ 	text-align: center;
+ 	margin: auto;
+   -webkit-transition: all 300ms ease-out;
+   -moz-transition: all 300ms ease-out;
+   transition: all 300ms ease-out;
+ 	vertical-align: middle;
+ }
+
+ .photo-grid li:hover figcaption{
+ 	opacity: 1;
+ }
+ .photo-grid li:hover h3 {
+ 	opacity: 0;
+ }
+
+ .photo-grid li:hover img {
+ 	opacity: 1;
+ }
+
+ .photo-grid li:hover figure img {
+ 	-webkit-transform: scale(1.4);
+ 	-moz-transform: scale(1.4);
+ 	transform: scale(1.4);
+ }
+
+ .photo-grid li:hover figure h3 {
+ 	-webkit-transform: scale(1.4);
+ 	-moz-transform: scale(1.4);
+ 	transform: scale(1.4);
+ }
+
+ .photo-grid li:hover figcaption p {
+ 	-moz-transform: translateY(40px);
+ 	-webkit-transform: translateY(40px);
+ 	transform: translateY(40px);
+ }
+
+ #portfolio-div h2 {
+ 	font-family: 'Dosis', sans-serif;
+ 	font-size: 25px;
+ 	text-shadow: 4px 4px 4px #aaa;
+ }
 img.portfolio-images {
     margin-left: 5px;
     position: relative;
@@ -285,7 +286,6 @@ img.portfolio-images {
   margin-bottom: 0;
   font-weight: 300;
   line-height: 30px;
-  /* text-align: center; */
   background-color: #4d1652;
   border-bottom: 0;
   z-index: 1;
@@ -293,54 +293,76 @@ img.portfolio-images {
   margin-left: 0px;
 
 }
+/*==============================================================================================================================================
+																																		FOOTER
+===============================================================================================================================================*/
+
+.footer {
+    background: #FFFFF0;
+    border-top: solid;
+    border-top-width: 5px;
+    border-top-color: #A9A9A9;
+    position: relative;
+    clear: both;
+}
+/*===================================================================================================================================================
+																																			MEDIA QUERIES
+====================================================================================================================================================*/
+@media all and (max-width: 1280px) {
 
 
-/*Media Queries*/
-@media only screen and (max-width: 980px) {
-
-  .jobs h3 a {
-    width: 100%;
-    height: 70px;
-    margin-right: 40px;
-    font-size: 50px;
-    padding: 20px;
-    margin-bottom: 40px;
-
-  }
+	/*======ABOUT ME MEDIA QUERIES========*/
+	#about-me{
+			padding-top: 0.5em;
+			/* background-color: black; */
+	}
+	.profile-pic {
+			width: 100%;
+			height: 75%;
+	}
+	/*======PORTFOLIO MEDIA QUERIES========*/
   img.portfolio-images {
       width:100%;
       height: 100%;
       margin-left: 0px;
       float: left;
   }
- form input {
- width: 100%;
+
+	  .jobs h3 a {
+		    width: 100%;
+		    height: 70px;
+		    margin-right: 40px;
+		    font-size: 50px;
+		    padding: 20px;
+		    margin-bottom: 40px;
+	  }
+
+	/*======CONTACT ME MEDIA QUERIES========*/
+	.span6{
+		  width: 100%;
+		  height: 75%;
+	}
+	form input {
+			width: 100%;
+	}
+
+	#messagebox {
+			width: 100%;
+	}
+	/*======CONNECTIONS DIV MEDIA QUERIES========*/
+	.connections-div{
+		  padding: 300px;
+		  margin-bottom: 100px;
+			float: right;
+			display: inline;
+	}
 }
 
-/* .imageSize {
-  height: 100%;
-  width: 50px;
-} */
-#messagebox {
-  width: 100%;
-}
+@media all and (max-width: 991px) {
 
-.profile-pic {
-  width: 100%;
-  height: 75%;
-}
-  .span6{
-  width: 100%;
-  height: 75%;
-}
-.connections-div{
-  padding: 300px;
-  margin-bottom: 100px;
-}
-}
-
-@media only screen and (max-width: 768px) {
+/*======NAVBAR MEDIA QUERIES========*/
   ul {
+
 
     width: 25%;
     li {
@@ -352,7 +374,17 @@ img.portfolio-images {
       }
     }
   }
+		/*======ABOUT ME MEDIA QUERIES========*/
+		#about-me{
+			padding-top: 0.5em;
+			/* background-color: blue; */
+		}
+		.profile-pic {
+				width: 50%;
+				height: 50%;
+		}
 
+		/*======PORTFOLIO MEDIA QUERIES========*/
     .jobs h3 a {
       height: 12%;
       padding: 3px;
@@ -360,38 +392,30 @@ img.portfolio-images {
       margin-left: 5px;
       font-size: 30px; */
       margin-bottom: 0px;
-
-
     }
     img.portfolio-images {
         width: 100%;
         height: 100%;
-
     }
 
-    .connections-div{
-      padding: 200px;
-      margin: auto;
-    }
 
-/*had trouble with figuring out the image layout
-*/
-.profile-pic {
-  width: 50%;
-  height: 50%;
+/*======CONTACT ME MEDIA QUERIES========*/
+		form input {
+			 width: 100%
+		}
+		#messagebox {
+			  width: 100%;
+		}
+/*======CONNECTIONS DIV MEDIA QUERIES========*/
+.connections-div{
+		padding: 200px;
+		margin: auto;
+}
 }
 
-form input {
- width: 100%
-}
-#messagebox {
-  width: 100%;
-}
+@media all and (max-width: 768px) {
 
-
-}
-
-@media screen and (max-width: 640px) {
+/*======NAVBAR MEDIA QUERIES========*/
 
    ul {
 
@@ -405,49 +429,60 @@ form input {
         }
       }
     }
+	  .navbar-header {
+	      position: static;
+	      width: 600px;
+	      padding: 0px;
+	      margin-left:5px;
+	    }
+	  .navbar-right {
+	      position:static;
+	      float: left;
+	      margin: 3px;
+	    }
+	/*======ABOUT ME MEDIA QUERIES========*/
 
-  .navbar-header {
-      position: static;
-      width: 600px;
-      padding: 0px;
-      margin-left:5px;
-    }
-  .navbar-right {
-      position:static;
-      float: left;
-      margin: 3px;
-    }
+		#about-me{
+				padding-top: 0.5em;
+				/* background-color: green; */
+			}
 
-  .jobs h3 a {
-    width: 96%;
-    margin-left: 5px;
-    font-size: 30px;
+	/*======PORTFOLIO MEDIA QUERIES========*/
+	  .jobs h3 a {
+	    width: 96%;
+	    margin-left: 5px;
+	    font-size: 30px;
 
-  }
-  img.portfolio-images {
-      width: 100%;
-      height: 100%;
+	  }
+	  img.portfolio-images {
+	      width: 100%;
+	      height: 100%;
+	  }
+	   .photo-grid {
+	    min-width: 250px;
+	    margin: 0;
+	    padding: 0;
+	  }
+		.photo-grid {
+		    margin-right: 1em;
+		    padding: 0;
+				width: 90%;
+				float: left;
+		 }
+	/*======CONNECTIONS DIV MEDIA QUERIES========*/
 
-  }
-  .connections-div{
-    padding: 170px;
-    margin: auto;
-  }
-   .photo-grid {
-    min-width: 250px;
-    margin: 0;
-    padding: 0;
-  }
-.photo-grid {
-    margin-right: 1em;
-    padding: 0;
-		width: 90%;
-		float: left;
-  }
+		 .connections-div{
+			 padding: 170px;
+			 margin: auto;
+		 }
 
 }
 
-@media (max-width: 440px) {
+
+@media all and (max-width: 440px) {
+
+	/*======NAVBAR MEDIA QUERIES========*/
+
      .navbar.navbar-default .navbar-custom ul li a{
       background: #4d1652;
       width: 25%;
@@ -460,51 +495,57 @@ form input {
         }
       }
     }
-		#portfolio-image {
-			width: 100%;
-		}
-		#about-me{
-			width: 100%;
-			padding-top: 0.5em;
-			float: left;
-		}
-  .photo-grid ul{
-      /* margin-bottom: 50px; */
-      padding: 0;
-    }
-    div.row #portfolio-div{
-      margin: 0;
-      padding: 0;
-    }
-    img.portfolio-images {
-        width: 100%;
-        height: 100%;
+		  .navbar.navbar-default .navbar-custom li a {
+		    	width: 100%;
 
-    }
+		  }
+		  .navbar-header {
+		      position: static;
+		      width: 100%;
+		      /* padding: 5px;
+		      margin:5px; */
+		    }
+		  .navbar-right {
+		      position:static;
+		      float: left;
+		      margin: 3px;
+		    }
+/*======ABOUT ME MEDIA QUERIES========*/
 
-    .jobs h3 a {
-      width: 92%;
+			#about-me{
+					width: 100%;
+					padding-top: 0.5em;
+					float: left;
+					/* background-color: purple; */
+				}
 
-    }
-    .connections-div{
-      padding: 0px;
-      margin: 0;
-						margin: auto;
-    }
+/*======PORTFOLIO MEDIA QUERIES========*/
 
-  .navbar.navbar-default .navbar-custom li a {
-    width: 100%;
+			#portfolio-image {
+					width: 100%;
+				}
+		  .photo-grid ul{
+		      /* margin-bottom: 50px; */
+		      padding: 0;
+		    }
+		  div.row #portfolio-div{
+		      margin: 0;
+		      padding: 0;
+		    }
+		  img.portfolio-images {
+		        width: 100%;
+		        height: 100%;
+		    }
+		  .jobs h3 a {
+		      width: 92%;
+		    }
 
-  }
-  .navbar-header {
-      position: static;
-      width: 100%;
-      /* padding: 5px;
-      margin:5px; */
-    }
-  .navbar-right {
-      position:static;
-      float: left;
-      margin: 3px;
-    }
+/*======CONNECTIONS DIV MEDIA QUERIES========*/
+
+		  .connections-div{
+		      padding: 0px;
+		      margin: 0;
+					margin: auto;
+		    }
+
   }
