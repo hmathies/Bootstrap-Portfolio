@@ -97,6 +97,7 @@ img.connections {
 /*=================================================================================================================================================
 																																						CONTACT PAGE
 ==================================================================================================================================================*/
+
 .background-switch {
   text-align: center;
   color: white;
@@ -312,7 +313,7 @@ img.connections {
 	/*======ABOUT ME MEDIA QUERIES========*/
 	#about-me{
 			padding-top: 0.5em;
-			/* background-color: black; */
+
 	}
 	.profile-pic {
 			width: 100%;
@@ -384,7 +385,7 @@ img.connections {
 
 		#me {
 			margin: 1em;
-			background-color: blue;
+
 		}
 
 		/*======PORTFOLIO MEDIA QUERIES========*/
@@ -471,6 +472,12 @@ img.connections {
 				width: 100%;
 				float: left;
 		 }
+
+		 /*=======CONTACT ME MEDIA QUERIES============*/
+
+		 .contact-me {
+		 	margin: 1em;
+		 }
 	/*======CONNECTIONS DIV MEDIA QUERIES========*/
 
 	.connections-div{
@@ -538,7 +545,7 @@ img.connections {
 		margin: 1em;
 		width: 100%;
 		float: left;
-	
+
 	  padding: 0;
 	}
 
@@ -553,7 +560,11 @@ img.connections {
 		      padding: 0;
 		    }
 
+/*=======CONTACT ME MEDIA QUERIES============*/
 
+.contact-me {
+	margin: 1em;
+}
 /*======CONNECTIONS DIV MEDIA QUERIES========*/
 
 		  .connections-div{
