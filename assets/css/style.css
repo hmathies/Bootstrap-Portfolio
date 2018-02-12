@@ -524,8 +524,8 @@ img.connections {
 
 /*======ABOUT ME MEDIA QUERIES========*/
 			#portfolio-image{
-				width: 90%;
-				margin: 1em;
+				width: 100%;
+				margin: 0.2em;
 			}
 			.wrap-text #opening-line {
 			  font-weight: bold;
@@ -535,7 +535,7 @@ img.connections {
 			.wrap-text p {
 			  line-height: 1.8;
 			  font-size: 20px;
-			  margin: 2em;
+			  margin: 1em;
 			}
 
 
@@ -562,9 +562,9 @@ img.connections {
 
 /*=======CONTACT ME MEDIA QUERIES============*/
 
-.contact-me {
-	margin: 1em;
-}
+		.contact-me {
+			margin: auto;
+		}
 /*======CONNECTIONS DIV MEDIA QUERIES========*/
 
 		  .connections-div{
