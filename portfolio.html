@@ -150,7 +150,7 @@
 			<div class="row ">
 				<div class="col-lg-12 ">
 					<div class="navbar navbar-default navbar-fixed-bottom ">
-						<p class="navbar-text ">© 2018 - Site Built By Heather Mathies</p>
+						<p class="navbar-text ">© 2018 - Site designed and built by Heather Mathies</p>
 					</div>
 				</div>
 			</div>
@@ -160,40 +160,11 @@
 
 		<!-- closing container-fluid tag -->
 
-		<script>
-			(function() {
-				var isTouch = false //var to indicate current input type (is touch versus no touch)
-				var isTouchTimer
-				var curRootClass = '' //var indicating current document root class ("can-touch" or "")
 
-				function addtouchclass(e) {
-					clearTimeout(isTouchTimer)
-					isTouch = true
-					if (curRootClass != 'can-touch') { //add "can-touch' class if it's not already present
-						curRootClass = 'can-touch'
-						document.documentElement.classList.add(curRootClass)
-					}
-					isTouchTimer = setTimeout(function() {
-						isTouch = false
-					}, 1000) //maintain "istouch" state for 500ms so removetouchclass doesn't get fired immediately following a touch event
-				}
-
-				function removetouchclass(e) {
-					if (!isTouch && curRootClass == 'can-touch') { //remove 'can-touch' class if not triggered by a touch event and class is present
-						isTouch = false
-						curRootClass = ''
-						document.documentElement.classList.remove('can-touch')
-					}
-				}
-
-				document.addEventListener('touchstart', addtouchclass, false) //this event only gets called when input type is touch
-				document.addEventListener('mouseover', removetouchclass, false) //this event gets called when input type is everything from touch to mouse/ trackpad
-			})();
-		</script>
 		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="assets/js/verify.js"></script>
+		<script src="assets/js/portfolio.js"></script>
 </body>
 
 </html>
