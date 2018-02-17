@@ -429,20 +429,24 @@ img.connections {
 		}
 
 		/*======PORTFOLIO MEDIA QUERIES========*/
-		.photo-grid li {
-			display: inline-block;
-			margin: 1em;
-			width: 45%;
-			float: left;
-			overflow: hidden;
-		}
+    .photo-grid li {
+      display: inline-block;
+      margin: 1em;
+      width: 100%;
+      float: left;
+      padding: 0;
+    }
 
-		.photo-grid {
-		    margin-right: 1em;
-		    padding: 0;
-				width: 100%;
-				float: left;
-		 }
+    .photo-grid ul{
+
+        padding: 0;
+        margin: 0;
+
+      }
+      div.row #portfolio-div{
+          margin: 0;
+          padding: 0;
+        }
 
 
 /*======CONTACT ME MEDIA QUERIES========*/
