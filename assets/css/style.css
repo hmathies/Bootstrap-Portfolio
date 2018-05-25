@@ -104,6 +104,74 @@ img.connections {
 		text-align: center;
 
 	}
+/*==================================social icons with js==============================*/
+
+// Social Media Brand Colours
+// ==================================
+/* body {
+  margin: 0;
+  font-family: arial;
+  font-size: 13px;
+} */
+.container {
+  width: 10%;
+  margin: 50px auto;
+}
+.social-container {
+  height: 100%;
+  position: relative;
+}
+.social-container .social {
+  background-color: #b3a1b6;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+.social-container .social-toggle {
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding-top: 20px;
+  color: black;
+}
+.social-container .social-drop {
+  height: 300px;
+  width: 70px;
+  background: #b3a1b6;
+  display: none;
+  position: absolute;
+  top: 55px;
+  border-radius: 30px;
+}
+.social-container .social-drop ul {
+  margin-top: 10px;
+}
+.social-container .social-drop li {
+  font-size: 35px;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  margin-left: -23px;
+  color: black;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.social-container .social-drop .lk:hover {
+  color: #00aced;
+}
+.social-container .social-drop .st:hover {
+  color: #cb2027;
+}
+.social-container .social-drop .gh:hover {
+  color: #517fa4;
+}
+
+
 
 /*=================================================================================================================================================
 																																						CONTACT PAGE
