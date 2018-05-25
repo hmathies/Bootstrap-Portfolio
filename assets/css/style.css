@@ -19,11 +19,14 @@ p {
 /*==============================================================================================================================================
 																																		NAVBAR
 ===============================================================================================================================================*/
-
+.inactive:hover {
+  background-color: #dddfd9;
+  color: #4d1652;
+  }
 
 
 .navbar-default {
-    background: linear-gradient(90deg,  #4d1652, #b3a1b6);
+    background: linear-gradient(50deg,  #4d1652, #b3a1b6);
     font-family: 'Dosis', sans-serif;
     font-size: 18px;
     text-decoration: none;
