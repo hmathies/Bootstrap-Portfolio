@@ -241,15 +241,6 @@ img.connections {
 																																					PORTFOLIO PAGE
 ==============================================================================================================================================*/
 
-
- .photo-grid li {
-	 display: inline-block;
-	 margin: 1em;
-	 width: 45%;
-	 float: left;
-	 overflow: hidden;
- }
-
  .photo-grid {
 		 margin-right: 1em;
 		 padding: 0;
@@ -258,6 +249,14 @@ img.connections {
 		 text-align: center;
 	}
 
+
+ .photo-grid li {
+	 display: inline-block;
+	 margin: 1em;
+	 width: 45%;
+	 float: left;
+	 overflow: hidden;
+ }
 
  .photo-grid h3 img {
  	display: block;
@@ -346,17 +345,19 @@ img.connections {
    z-index: 1;
    text-shadow: none;
    margin-left: 0px;
-
+  letter-spacing: 1px;
  }
  /*===hover events===*/
 
  .photo-grid li:hover figcaption{
- 	opacity: 1;
+ 	opacity: 2;
  }
- .photo-grid li:hover h3 {
+ .photo-grid li:hover h5 {
  	opacity: 0;
  }
-
+ .photo-grid .jobs:hover h5 {
+ 	opacity: 0;
+ }
  .photo-grid li:hover img {
  	opacity: 1;
  }
