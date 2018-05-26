@@ -14,6 +14,7 @@
 
 <body>
 	<div class="container-fluid main-content">
+		<!-- no closing div for ^^ yet-->
 		<div class="row">
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
@@ -30,26 +31,51 @@
 
 							<li class="dropdown">
 
-								<li><a href="index.html">About Me</a></li>
+								<li class="inactive"><a href="index.html">About Me</a></li>
 								<li class="active"><a href="portfolio.html">Portfolio</a></li>
-								<li><a href="contact.html">Contact Me</a></li>
+								<li class="inactive"><a href="contact.html">Contact Me</a></li>
 						</ul>
 					</div>
 				</div>
 			</nav>
-			<!-- End of navbar -->
 		</div>
+		<!-- End of navbar -->
+		<div class="row" id="my-projects">
+			<div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 col-lg-offset-1">
 
-		<div class="row" id="portfolio-div">
-			<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
+				<ul class="photo-grid">
+					<h3>Work Experience</h3>
+					<li>
+						<figure>
+							<img src="assets/images/business-generator1.png" height="300 " width="350 " alt="Business icon">
+							<h5 class="jobs "><u>Business Idea Generator</u>: Designed and built with one other developer. October 2017 - May 2018</h5>
+							<figcaption>
+								<span>PostgreSQL Ruby on Rails Sass</span>
+								<p><a href="https://app.ludus.one/ab3be668-83a6-45e8-854b-2ea460d81418" target="_blank">View More Info</a></p>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
 
+					<li>
+						<figure>
+							<img src="assets/images/shakes.jpg " height="300 " width="350 " alt="Healthy Shakes">
+							<h5 class="jobs "><u>Personal Website</u>: Designed and built the website for the client. February 2018</h5>
+							<figcaption>
+								<span>Bootstrap4  HTML5  CSS3</span>
+								<p><a href="https://hmathies.github.io/Laura/ " target="_blank">CHECK IT OUT!</a></p>
+							</figcaption>
+						</figure>
+						</a>
+					</li>
+				</ul>
 
 				<ul class="photo-grid">
 					<h3>Projects</h3>
 					<li>
 						<figure>
 							<img src="assets/images/reunited1.jpg " height="300 " width="350 " alt="man and dog ">
-							<h3 class="jobs ">Reunited</h3>
+							<h5 class="jobs "><u>Reunited</u>: app to search and post lost or found dogs</h5>
 							<figcaption>
 								<span>MySQL NodeJS ReactJS</span>
 								<p><a href="https://reunited.herokuapp.com/ " target="_blank">CHECK IT OUT</a></p>
@@ -61,7 +87,7 @@
 					<li>
 						<figure>
 							<img src="assets/images/clicksterpup.jpeg" height="300" width="350" alt="Black Puppy">
-							<h3 class="jobs">The Clickster</h3>
+							<h5 class="jobs"><u>The Clickster Game</u>: A React.js game where players try to click all of the puppies. </h5>
 							<figcaption>
 								<span>ReactJS</span>
 								<p><a href="https://clicky-clickster.herokuapp.com/" target="_blank">CHECK IT OUT!</a></p>
@@ -73,7 +99,7 @@
 					<li>
 						<figure>
 							<img src="assets/images/mongoDB.jpeg" height="300" width="350" alt="MongoDB Logo">
-							<h3 class="jobs">Mongo News</h3>
+							<h5 class="jobs"><u>Mongo News</u>: NPR web scraper app where users can search, read, save, and make comments on NPR articles.</h5>
 							<figcaption>
 								<span>Handlebars MongoDB NodeJS</span>
 								<p><a href="https://news-the-mongo-way.herokuapp.com/" target="_blank">CHECK IT OUT!</a></p>
@@ -84,9 +110,8 @@
 
 					<li>
 						<figure>
-
 							<img src="assets/images/train.jpg" height="300" width="350" alt="Train">
-							<h3 class="jobs">Train Time</h3>
+							<h5 class="jobs"><u>Train Time</u>: This is an application that uses Google's Firebase to host arrival and departure train times.</h5>
 							<figcaption>
 								<span>Firebase JQuery MomentJS</span>
 								<p><a href="https://hmathies.github.io/Train-Schedule/" target="_blank">CHECK IT OUT!</a></p>
@@ -98,7 +123,7 @@
 					<li>
 						<figure>
 							<img src="assets/images/eWalk.jpeg" height="300" width="350" alt="Hotel Hallway ">
-							<h3 class="jobs ">eWalk.io</h3>
+							<h5 class="jobs "><u>eWalk.io</u>: An application built for the hotel industry where hotel staff can search for or post vacant rooms.</h5>
 							<figcaption>
 								<span>MySQL NodeJS</span>
 								<p><a href="https://fast-wildwood-25635.herokuapp.com/ " target="_blank">CHECK IT OUT!</a></p>
@@ -110,7 +135,7 @@
 					<li>
 						<figure>
 							<img src="assets/images/SolarEclipse.jpeg " height="300 " width="350 " alt="Boy wearing protective glasses ">
-							<h3 class="jobs ">Solar Eclipse Trivia Game</h3>
+							<h5 class="jobs "><u>Solar Eclipse Trivia Game</u>: This is a trivia game about solar eclipses. </h5>
 							<figcaption>
 								<span>Bootstrap  HTML  jQuery</span>
 								<p><a href="https://hmathies.github.io/Solar-Eclipse-Trivia/ " target="_blank">CHECK IT OUT!</a></p>
@@ -118,10 +143,11 @@
 						</figure>
 						</a>
 					</li>
+
 					<li>
 						<figure>
 							<img src="assets/images/olympians.jpeg " height="300 " width="350 " alt="USA Olympic symbol">
-							<h3 class="jobs ">Olympic Clicky Game</h3>
+							<h5 class="jobs "><u>Olympic Clicky Game</u>: The objective of the game is to guess the exact number. If you guess over the number, you lose.</h5>
 							<figcaption>
 								<span>Bootstrap  HTML  jQuery</span>
 								<p><a href="https://hmathies.github.io/Olympic-Clicky-Game/ " target="_blank">CHECK IT OUT!</a></p>
@@ -129,52 +155,41 @@
 						</figure>
 						</a>
 					</li>
-					<li>
-						<figure>
-							<img src="assets/images/shakes.jpg " height="300 " width="350 " alt="Healthy Shakes">
-							<h3 class="jobs ">Laura O'Berry</h3>
-							<figcaption>
-								<span>Bootstrap4  HTML5  CSS3</span>
-								<p><a href="https://hmathies.github.io/Laura/ " target="_blank">CHECK IT OUT!</a></p>
-							</figcaption>
-						</figure>
-						</a>
-					</li>					
 
 				</ul>
 			</div>
 			<!-- Below div is for the container -->
 
+
 			<div class="row connections-div">
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
+				<div class="col-md-1 col-lg-1 col-sm-12 col-xs-12 ">
 					<h3>Connect with Me</h3>
 					<hr>
 
+					<a href="https://www.linkedin.com/in/heather-mathies" target="_blank"><img class="connections" src="assets/images/Linkedin_Icon.png" height="40" width="40" alt="linkedin"></a>
 					<a href="https://github.com/hmathies" target="_blank"><img class="connections" src="assets/images/GitHub_Icon.png" height="40" width="40" alt="GitHub"></a>
 					<a href="https://stackoverflow.com/users/8285589/heather-mathies?tab=profile" target="_blank"><img class="connections" src="assets/images/stackoverflow_icon.png" height="40" width="40" alt="Stackoverflow"></a>
-					<a href="https://www.linkedin.com/in/heather-mathies" target="_blank"><img class="connections" src="assets/images/Linkedin_Icon.png" height="40" width="40" alt="linkedin"></a>
 				</div>
 			</div>
-
-
-			<div class="row ">
-				<div class="col-lg-12 ">
-					<div class="navbar navbar-default navbar-fixed-bottom ">
-						<p class="navbar-text ">© 2018 - Site designed and built by Heather Mathies</p>
-					</div>
-				</div>
-			</div>
-			<br><br><br><br>
 		</div>
+		<!--   footer   -->
+		<div class="row footer">
+			<div class="col-lg-12">
+				<p>© 2018 - Site built and designed by Heather Mathies</a>
+				</p>
+			</div>
+		</div>
+	</div>
 
 
-		<!-- closing container-fluid tag -->
+
+	<!-- closing container-fluid tag -->
 
 
-		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="assets/js/portfolio.js"></script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="assets/js/portfolio.js"></script>
 </body>
 
 </html>
