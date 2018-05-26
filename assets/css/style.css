@@ -14,7 +14,16 @@ p {
 	font-family: 'Bellefair', serif;
 }
 
+html,body{
+    height: 100%;
+}
+.footer {
+  clear: both;
+  background: linear-gradient(50deg,  #4d1652, #b3a1b6);
+  padding: 1em;
+  text-align: center;
 
+}
 
 /*==============================================================================================================================================
 																																		NAVBAR
@@ -84,7 +93,7 @@ p {
 	margin: 3em;
 }
 #me{
-	margin: 1em;
+	margin: auto;
 }
 
 #portfolio-image{
@@ -92,6 +101,7 @@ p {
 	margin:  0 2em 2em 0;
 	/* margin-bottom: 2em; */
 }
+
 
 
 
@@ -109,8 +119,7 @@ img.connections {
 	}
 /*==================================social icons with js==============================*/
 
-// Social Media Brand Colours
-// ==================================
+
 /* body {
   margin: 0;
   font-family: arial;
@@ -274,6 +283,7 @@ img.connections {
  	width: 350px;
  }
 
+
  .photo-grid figcaption {
 
  	background: rgba(0,0,0,0.8);
@@ -380,6 +390,11 @@ img.connections {
  	transform: translateY(40px);
  }
 
+ #my-projects > div > ul> h3 {
+   text-align: left;
+   margin-left:15px;
+ }
+
 /*==============================================================================================================================================
 																																		FOOTER
 ===============================================================================================================================================*/
@@ -450,6 +465,12 @@ img.connections {
 	#messagebox {
 			width: 100%;
 	}
+
+  .footer {
+    height: 150px;
+    margin-top: 100px;
+
+  }
 	/*======CONNECTIONS DIV MEDIA QUERIES========*/
 	.connections-div{
 			width: 100%;
@@ -515,7 +536,7 @@ img.connections {
         margin: 0;
 
       }
-      div.row #portfolio-div{
+      div.row #my-projects{
           margin: 0;
           padding: 0;
         }
@@ -602,7 +623,7 @@ img.connections {
       margin: 0;
 
     }
-    div.row #portfolio-div{
+    div.row #my-projects{
         margin: 0;
         padding: 0;
       }
@@ -672,18 +693,27 @@ img.connections {
 			.wrap-text p {
 			  line-height: 1.8;
 			  font-size: 20px;
-			  margin: 1em;
+			  margin: auto;
 			}
+
+      .wrap-text .curve {
+        margin: auto;
+      }
+
+  #me {
+    margin: auto;
+    padding: 0;
+  }
+
 
 
 /*======PORTFOLIO MEDIA QUERIES========*/
 		.photo-grid li {
 			display: inline-block;
-			margin: 1em;
+			margin: auto;
 			width: 100%;
 			float: left;
-
-		  padding: 0;
+		  padding-bottom: 10px;
 		}
 
 	  .photo-grid ul{
