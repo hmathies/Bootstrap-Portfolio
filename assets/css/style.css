@@ -18,21 +18,13 @@ html,body{
     height: 100%;
 }
 
-footer {
 
-    clear: both;
-    background: linear-gradient(50deg,  #4d1652, #b3a1b6);
-    padding: 1em;
-    text-align: center;
-    height: 100px;
-
-}
-.footer {
+#footer {
   clear: both;
   background: linear-gradient(50deg,  #4d1652, #b3a1b6);
   padding: 1em;
   text-align: center;
-
+  height: 100px;
 }
 
 /*==============================================================================================================================================
