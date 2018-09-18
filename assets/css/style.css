@@ -17,12 +17,14 @@ p {
 html,body{
     height: 100%;
 }
-.footer {
+
+
+#footer {
   clear: both;
   background: linear-gradient(50deg,  #4d1652, #b3a1b6);
   padding: 1em;
   text-align: center;
-
+  height: 100px;
 }
 
 /*==============================================================================================================================================
@@ -97,7 +99,7 @@ html,body{
 }
 
 #portfolio-image{
-	width: 50%;
+	width: 30%;
 	margin:  0 2em 2em 0;
 	/* margin-bottom: 2em; */
 }
@@ -119,6 +121,18 @@ img.connections {
 		text-align: center;
 
 	}
+
+#Rails_icon {
+    padding-bottom: 40px;
+}
+.fab {
+  padding: 0 20px 0 20px;
+
+}
+#program_icons{
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
 /*==================================social icons with js==============================*/
 
 
@@ -470,10 +484,11 @@ img.connections {
 	}
 
   .footer {
-    height: 150px;
-    margin-top: 100px;
-
+    margin-top: 40px;
+    height: 100px;
   }
+
+
 	/*======CONNECTIONS DIV MEDIA QUERIES========*/
 	.connections-div{
 			width: 100%;
@@ -482,6 +497,10 @@ img.connections {
 			text-align: center;
 
 		}
+  .connections-div a {
+    text-decoration: none;
+    font-style: italic;
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -561,6 +580,13 @@ img.connections {
 		clear: both;
 
 	}
+  img.connections {
+      margin: auto;
+      position: relative;
+      height: 40px;
+      display: inline;
+      padding: 5px;
+  }
 }
 
 @media all and (max-width: 768px) {
