@@ -20,13 +20,14 @@ html,body{
 
 
 #footer {
+	color: #FFF;
   clear: both;
   background: linear-gradient(50deg,  #4d1652, #b3a1b6);
   padding: 1em;
   text-align: center;
   height: 100px;
+	margin-top: auto;
 }
-
 /*==============================================================================================================================================
 																																		NAVBAR
 ===============================================================================================================================================*/
@@ -96,6 +97,7 @@ html,body{
 }
 #me{
 	margin: auto;
+	min-height: calc(100vh - 140px);
 }
 
 #portfolio-image{
@@ -226,6 +228,9 @@ img.connections {
     padding: 5px 5px;
     font-size: 20px;
     border-radius: 10px;
+}
+.contact-me {
+	min-height: calc(100vh - 140px);
 }
 .contact-me h1 {
    font-family: 'Dosis', sans-serif;
@@ -507,18 +512,16 @@ img.connections {
 
 /*======NAVBAR MEDIA QUERIES========*/
   ul {
-
-
     width: 25%;
-    li {
-      float: right;
-      a {
-        padding: 10px 3%;
-        line-height: 20px;
-        border-top: 1px solid #333;
-      }
-    }
   }
+	li {
+		float: right;	
+	}
+	a {
+		padding: 10px 3%;
+		line-height: 20px;
+		border-top: 1px solid #333;
+	}
 		/*======ABOUT ME MEDIA QUERIES========*/
 
 		#me {
@@ -638,7 +641,7 @@ img.connections {
 
 	/*======PORTFOLIO MEDIA QUERIES========*/
   .photo-grid li {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 1em;
     width: 100%;
     float: left;
@@ -680,18 +683,19 @@ img.connections {
 
 	/*======NAVBAR MEDIA QUERIES========*/
 
-     .navbar.navbar-default .navbar-custom ul li a{
+     .navbar.navbar-default .navbar-custom ul li a {
       background: #4d1652;
       width: 25%;
-      li {
-        float: left;
-        a {
-          padding: 10px 3%;
-          line-height: 20px;
-          border-top: 1px solid #333;
-        }
-      }
     }
+		li {
+			float: left;
+
+		}
+		a {
+			padding: 10px 3%;
+			line-height: 20px;
+			border-top: 1px solid #333;
+		}
 		  .navbar.navbar-default .navbar-custom li a {
 		    	width: 100%;
 
@@ -701,13 +705,13 @@ img.connections {
 		      width: 100%;
 		    }
 		  .navbar-right {
-		      position:static;
+		      position: static;
 		      float: left;
 		      margin: 3px;
 		    }
 
 /*======ABOUT ME MEDIA QUERIES========*/
-			#portfolio-image{
+			#portfolio-image {
 				width: 100%;
 				margin: 0.2em;
 			}
@@ -729,16 +733,16 @@ img.connections {
         margin: auto;
       }
 
-  #me {
-    margin: auto;
-    padding: 0;
-  }
+			#me {
+				margin: auto;
+				padding: 0;
+			}
 
 
 
 /*======PORTFOLIO MEDIA QUERIES========*/
 		.photo-grid li {
-			display: inline-block;
+			/* display: inline-block; */
 			margin: auto;
 			width: 100%;
 			float: left;
@@ -746,20 +750,19 @@ img.connections {
 		}
 
 	  .photo-grid ul{
-
 	      padding: 0;
 				margin: 0;
-
 	    }
-		  div.row #portfolio-div{
-		      margin: 0;
-		      padding: 0;
-		    }
+		div.row #portfolio-div{
+				margin: 0;
+				padding: 0;
+			}
 
 /*=======CONTACT ME MEDIA QUERIES============*/
 
 		.contact-me {
 			margin: auto;
+			padding: 0;
 		}
 /*======CONNECTIONS DIV MEDIA QUERIES========*/
 
